@@ -29,7 +29,7 @@ instead of:
     └── main.out
 ```
 
-The biggest thing to take away here is the idea that, like in webpack, you can customize where you code is output to
+The biggest thing to take away here is the idea that, like in webpack, you can customize where you code is output to.
 
 # Quickstart
 
