@@ -53,7 +53,7 @@ With this in mind, here are packages that I have added to my Atom setup to help 
 
 Each repo represents a stand alone project and will contain their own README where you can go to learn more about each one. The first 3 projects are 100% [Modern CLJS](https://github.com/magomimmo/modern-cljs) and I recommend going to his first 3 tutorials to grasp them.  The rest are straight lessons from [JavaScript 30](https://javascript30.com/) of which I have heavily annotated for `cljs`.
 
-* [00-setup]()
+* [00-setup](https://github.com/tkjone/clojurescript-30/tree/master/00-setup)
 * 01-setup-reload
 * 02-setup-reload-cleaner
 * 03-drumkit
