@@ -6,10 +6,11 @@ Aside from teaching myself `clj/cljs`, I believe that `clj/cljs` is missing appr
 
 In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
 
-1.  Start with the [Getting Started](getting-started) guide below
-2.  Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
-3.  Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there.  When you get stuck, feel free to come over here for details on how I did it.
-4.  If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here.  This might help us gain insight into how we can better help new developers to join the Clojure community.
+* Start with the [Getting Started](getting-started) guide below
+* Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
+* Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there.  When you get stuck, feel free to come over here for details on how I did it.
+* If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here.  This might help us gain insight into how we can better help new developers to join the Clojure community.
+
 
 1. [Getting Started](#getting-started)
   * [Install Java](#install-java)
