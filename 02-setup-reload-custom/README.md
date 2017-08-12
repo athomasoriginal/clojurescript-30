@@ -9,7 +9,7 @@ Before trying out this repo please ensure you have a cljs environment setup.  Se
 
 # Overview
 
-If you have seen the structure of `00` and `01` dirs you noticed that the output of all files in development go into the `target`.  so instead, maybe you want to have all your `cljs` compiled files to go into a specific directory, with a specic name.  To do this in boot, you use a `main.cljs.edn` file.  See the `src` dir of this repo to see how that can be done.
+If you have seen the structure of `00` and `01` dirs you noticed that the output of all files in development go into the `target` dir.  so instead, maybe you want to have all your `cljs` compiled files to go into a specific directory, with a specic name.  To do this in boot, you use a `main.cljs.edn` file.  See the `src` dir of this repo to see how that can be done.
 
 So result is that we get:
 
