@@ -11,14 +11,15 @@ In this spirit, my hope is that people find this repo a helpful learning tool.  
 * Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there.  When you get stuck, feel free to come over here for details on how I did it.
 * If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here.  This might help us gain insight into how we can better help new developers to join the Clojure community.
 
+# Table of Contents
 
-1. [Getting Started](#getting-started)
+* [Getting Started](#getting-started)
   * [Install Java](#install-java)
   * [Install Boot](#install-boot)
   * [Editor Setup](#editor-setup)
-2. [Content Overview](#content-overview)
-3. [Background](#background)
-4. [Special Thanks](#special-thanks)
+* [Content Overview](#content-overview)
+* [Background](#background)
+* [Special Thanks](#special-thanks)
 
 
 # Getting Started
