@@ -4,12 +4,20 @@ This repo illustrates the projects I worked on which enabled me to go from an [e
 
 Aside from teaching myself `clj/cljs`, I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.
 
-In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo as a learning tool:
+In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
 
-1.  Start with this repos [Getting Started](getting-started) guide
+1.  Start with the [Getting Started](getting-started) guide below
 2.  Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
-3.  Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there.  When you get stuck, feel free to come over here to see how I did it and my annotations for why I did what I did.  But be sure to give EVERYTHING a try!
+3.  Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there.  When you get stuck, feel free to come over here for details on how I did it.
 4.  If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here.  This might help us gain insight into how we can better help new developers to join the Clojure community.
+
+1. [Getting Started](#getting-started)
+  * [Install Java](#install-java)
+  * [Install Boot](#install-boot)
+  * [Editor Setup](#editor-setup)
+2. [Content Overview](#content-overview)
+3. [Background](#background)
+4. [Special Thanks](#special-thanks)
 
 
 # Getting Started
@@ -26,9 +34,9 @@ see [clojure guide - install boot](https://tkjone.github.io/clojure-guide/v1/gui
 
 ## Editor Setup
 
-The most common suggestions for editors I have seen for Clojure/ClojureScript are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html).  However, I prefer to keep it simple and use [Atom](https://atom.io/).  I believe that this is likely the easiest introduction for new developers as there is huge community support, strong support for the `clj/cljs` language and you don't have to learn a myriad of hot keys.
+The most common suggestions for editors I have seen for `clj/cljs` are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html).  However, I prefer to keep it simple and use [Atom](https://atom.io/).  I believe that this is likely the easiest introduction for new developers as there is huge community support, strong support for the `clj/cljs` language and you don't have to learn a myriad of hot keys.
 
-> To emacs/vim people, this is not a slight against your editors.  These are amazing editors and people should learn them.  When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great.
+> To emacs/vim people, this is not a slight against your editors.  These are amazing editors and people should learn them.  When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great.  Remember what it is like to be new at something - its all about baby steps
 
 With this in mind, here are packages that I have added to my Atom setup to help working with Clojure an even more enjoyable experience:
 
@@ -41,9 +49,7 @@ With this in mind, here are packages that I have added to my Atom setup to help 
 
 # Content Overview
 
-Each sub directory in this repo reflects an individual project in the order in which I completed them.  Each will provide their own README where you can go to learn more about each one.
-
-Each repo represents a stand alone project.  The first 3 projects are 100% [Modern CLJS](https://github.com/magomimmo/modern-cljs) and I recommend going to his first 3 tutorials to grasp them.  The rest are straight lessons from [JavaScript 30](https://javascript30.com/) of which I have heavily annotated for `cljs`.
+Each repo represents a stand alone project and will contain their own README where you can go to learn more about each one. The first 3 projects are 100% [Modern CLJS](https://github.com/magomimmo/modern-cljs) and I recommend going to his first 3 tutorials to grasp them.  The rest are straight lessons from [JavaScript 30](https://javascript30.com/) of which I have heavily annotated for `cljs`.
 
 * [00-setup]()
 * 01-setup-reload
