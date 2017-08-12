@@ -55,7 +55,7 @@ Each repo represents a stand alone project and will contain their own README whe
 
 * [00-setup](https://github.com/tkjone/clojurescript-30/tree/master/00-setup)
 * [01-setup-reload](https://github.com/tkjone/clojurescript-30/tree/master/01-setup-reload)
-* 02-setup-reload-cleaner
+* [02-setup-reload-cleaner](https://github.com/tkjone/clojurescript-30/tree/master/02-setup-reload-custom)
 * 03-drumkit
 
 # Background
