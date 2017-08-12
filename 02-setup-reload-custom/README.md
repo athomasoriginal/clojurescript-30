@@ -1,11 +1,35 @@
-# 00-Setup-Reload
+# 02-Setup-Reload-Custom
 ---
 
-In-depth details for this can be found at [Modern CLJS Part 2](https://github.com/magomimmo/modern-cljs/blob/master/doc/second-edition/tutorial-02.md) and  [Modern CLJS Part 3](https://github.com/magomimmo/modern-cljs/blob/master/doc/second-edition/tutorial-03.md)
+In-depth details for this can be found at [Modern CLJS Part 3](https://github.com/magomimmo/modern-cljs/blob/master/doc/second-edition/tutorial-03.md)
 
 # Requirements
 
 Before trying out this repo please ensure you have a cljs environment setup.  See the [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started)
+
+# Overview
+
+If you have seen the structure of `00` and `01` dirs you noticed that the output of all files in development go into the `target`.  so instead, maybe you want to have all your `cljs` compiled files to go into a specific directory, with a specic name.  To do this in boot, you use a `main.cljs.edn` file.  See the `src` dir of this repo to see how that can be done.
+
+So result is that we get:
+
+```bash
+└── target
+    ├── index.html
+    └── js
+        └── main.js
+```
+
+instead of:
+
+```bash
+└── target
+    ├── index.html
+    ├── main.js
+    └── main.out
+```
+
+The biggest thing to take away here is the idea that, like in webpack, you can customize where you code is output to
 
 # Quickstart
 
@@ -63,11 +87,3 @@ $ (.log js/console "Hello, ClojureScript")
 ```
 
 you should see `Hello, ClojureScript` in the console.
-
-# Gotchas
-
-If there is an error in your JS file, for example:
-
-> Uncaught Error: Undefined nameToPath for setup-reload.core
-
-This will prevent `step 7` from working correctly.
