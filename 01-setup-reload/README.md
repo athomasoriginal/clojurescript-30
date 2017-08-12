@@ -61,4 +61,12 @@ When you visit your app at the above URL, it is going to connect your brepl to t
 $ (.log js/console "Hello, ClojureScript")
 ```
 
-you should see `Hello, ClojureScript` in the console.  
+you should see `Hello, ClojureScript` in the console.
+
+# Gotchas
+
+If there is an error in your JS file, for example:
+
+> Uncaught Error: Undefined nameToPath for setup-reload.core
+
+This will prevent `step 7` from working correctly. 
