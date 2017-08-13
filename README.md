@@ -11,6 +11,8 @@ In this spirit, my hope is that people find this repo a helpful learning tool.  
 * Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there.  When you get stuck, feel free to come over here for details on how I did it.
 * If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here.  This might help us gain insight into how we can better help new developers to join the Clojure community.
 
+I also want to throw the video [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) out there because it really highlights the story elements that make `cljs` a compelling language.
+
 # Table of Contents
 
 * [Getting Started](#getting-started)
