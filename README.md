@@ -1,8 +1,8 @@
 # ClojureScript 30
 
-This repo contains my answers to Wes Bos's [JavaScript 30](https://javascript30.com/) challenge.  By following along with Wes Bos's course I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.  The reason I did this was because I needed a structured way to learn CLJ and the functional programming paradigm.  Enter JavaScript 30.  Wes Bos has done an amazing job of designing a course full of small and approachable real-world programs you can build without any setup...if your using JavaScript that is.
+This repo contains my answers to Wes Bos's [JavaScript 30](https://javascript30.com/) challenge.  By following along with Wes Bos's course I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.  My overall goal was to learn CLJ and the functional programming paradigm.  Enter JavaScript 30.  Wes Bos has done an amazing job of designing a course full of small and approachable real-world programs you can build without any setup...if your using JavaScript that is ;)
 
-Having said this, I have a few other goals in the process of learning the language.  You will notice this repo is heavily annotated.  Why do this?  I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.  I want to clarify here that the CLJ community is amazing.  Check our the Clojurians Slack Channel and you will see what I mean.
+I also had a few additional goals.  You may have noticed this repo is heavily annotated.  I did this because I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.  I want to clarify here that the CLJ community is amazing.  Check our the Clojurians Slack Channel and you will see what I mean.
 
 In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
 
