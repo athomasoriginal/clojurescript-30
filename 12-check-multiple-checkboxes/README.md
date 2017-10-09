@@ -1,0 +1,175 @@
+# Check Boxes
+
+In this excrecise, you are going to work with
+
+* [Escaping strings](#escaping-strings)
+* [Mutable Local Variables](#mutable-local-variables)
+* [Control Flow](#control-flow)
+* [Tips](#tips)
+* [Resources](#resources)
+
+## Escaping Strings
+
+As a reminder, the `single-quote` is not something used inside of clojure strings.  Therefore, in order to have a quite in a string, you would need to escape them like so:
+
+```clojure
+(p "This is a \"string\"")
+```
+
+## Mutable Local Variables
+
+Take a look at the following JS code snippet:
+
+```javascript
+function {
+  let inBetween = false;
+
+  if (someCondition) {
+    htmlElements.forEach( () => {
+      if (condition1) {
+        inBetween = true
+      }
+
+      if (condition2) {
+        inBetween = false
+      }
+    })
+  }
+}
+```
+
+The above is an example of code that has `mutable local variables`.  The mutable local variable in this case is `inBetween`.  It is a variable inside of our code, that is meant to help us keep track of state.
+
+This is common in imperative programming styles, like JS, but in functional languages like CLJ this is not best-practice. Could you do it?  yes, but the language itself makes it a little difficult which brings up a good tip:
+
+> If you are trying to implement something in clojure and the language seems to be fighting you, take a beat.  There is a good chance there is a more idiomatic way to do it.
+
+In this case, we come up against two CLJ features:
+
+* data is immutable - specific to us though: lexically scoped variables cannot be mutated e.g. `let`
+
+Turns out the answer to working with mutable local variables is to use `reduce` or `reccur`.  Consider the following:
+
+```clojure
+(defn handle-event [e]
+  (reduce (fn [inBetween element] ;; anonymous function
+            (if some-condition
+              inBetween
+              (not inBetween)))
+           false ;; accumulator/val
+           html-elements))
+```
+
+That's better.  We can now keep track of state using the `accumulator`.  So we run our `anonymous function` or each item in our array and for each one, when it is done, we tell the next time this function runs, the state we left off at which was recorded in the `accumulator`.  This has some interesting affects on our code.
+
+Consider that in the JS example, we can update `inBetween` on the spot.  In CLJS example, the state is updated at the very end based on what we return.  This means we cannot change the state in the middle of the anonymous function.  The result is that we need to perform a few extra steps per `clause`.  Which leads us to our next point:  Control Flow.
+
+
+* [Clojure State Management](http://blog.jayfields.com/2011/04/clojure-state-management.html)
+* [Global Mutable State](http://www.lispcast.com/global-mutable-state)
+
+
+## Control Flow
+
+One difficult part for me in understanding control flow is when to use different forms.  After this little program, I got to look into when to use `when` vs. `cond`.
+
+**when**
+
+> We want more than one condition to potentially run
+
+```clojure
+(fn []
+    when condition
+      expression 1
+    when condition
+      expression 1)
+```
+
+In the above, both `when` forms are going to be evaluated.  This means, if they are both truth, they both run.  Therefore, if you only want one condition to ever run in this set of logic, opt for `cond`, `if` or `case`.
+
+> We want to perform side-effects
+
+```clojure
+(fn []
+    when condition
+      expression 1
+      expression 2
+    when condition
+      expression 1)
+```
+
+`when` comes with a `do` form built in, so you can run multiple forms in the expression.  This is what inuitively gives developers an understanding of what you are trying to do.
+
+> When our conditions are truthy
+
+I think of `when` as:  `When true` or `when false`
+
+**cond**
+
+> We only want one condition to run
+
+```clojure
+(fn []
+    (cond (condition expression)
+          (condition expression)
+          (condition expression)))
+```
+
+Only one of the above is going to run.
+
+> We can have more than two conditions
+
+When you compare the above to `if`, there are a lot more conditions we check for
+
+[Mor on cond](http://www.matthewboston.com/blog/understanding-clojure-cond-and-condp/)
+
+> Formatting cond
+
+You are going to notice that our `cond` clauses have more logic than the examples in the clojure docs.  You can see this form of styling suggested as an [ok-ish solution](https://github.com/bbatsov/clojure-style-guide#shor-forms-in-cond)
+
+### Tips
+
+* `fn` has an [implicit do](http://clojure-doc.org/articles/language/glossary.html#implicit-do) which means it is going to evaluate each and every `form` it finds.
+
+* There is no concept of `break` as this is an imperative programming thing and not a convention one would follow in functional programming...this is an interesting point because it goes a long way to show how trying to functional program in JS is actually possible, but given that the language is not built for it, you are allowed to do non-functional things much easier.  What does this mean?  you cannot do this:
+
+```clojure
+(fn []
+    when condition
+        expression 1
+        expression 2  ;; <-- break here - don't try to evaluate the next when
+    when condition
+       expression 1)
+```
+
+* **Anonymous Function**
+
+```clojure
+(fn [] "body")
+
+#()
+
+#(+ 2 %)
+
+#(+ 2 %1)
+
+#(+ 2 %1 %2)
+```
+
+But people also call them `function literals`?
+
+The above two are the same, but this one uses the dispatch macro.  Use this when you have a short function - just more compact and easier to read.
+
+* **s-expression**
+
+But people also call them forms?
+
+Turns out, an `s-expression` and a `form` are the same thing.  I guess, if we had to make a distinction is that a form has to be a valid s-expression.  So, not all forms are `s-expressions`, but all `s-expressions` are `forms`.
+
+
+## Resources
+
+* [Weird Wonderful Characters of Clojure](https://yobriefca.se/blog/2014/05/19/the-weird-and-wonderful-characters-of-clojure/)
+* [Clojure by Example](https://kimh.github.io/clojure-by-example/#if)
+* [Clojure Terminology Guide](http://clojure-doc.org/articles/language/glossary.html)
+* [Control Flow](https://practicalli.github.io/clojure/basic-clojure/control-flow.html)

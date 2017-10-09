@@ -59,6 +59,15 @@ Each repo represents a stand alone project and will contain their own README whe
 * [01-setup-reload](https://github.com/tkjone/clojurescript-30/tree/master/01-setup-reload)
 * [02-setup-reload-cleaner](https://github.com/tkjone/clojurescript-30/tree/master/02-setup-reload-custom)
 * 03-drumkit
+* 04-clock
+* 05-css-variables
+* 06-array-cardio
+* 07-flex-panels-image-gallery
+* 08-ajax-type-ahead
+* 09-array-cardio-2
+* 10-html5-canvas
+* 11-dev-tool-tricks
+* [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-scheck-multiple-checkboxes)
 
 # Background
 
