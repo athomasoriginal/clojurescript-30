@@ -1,8 +1,8 @@
 # ClojureScript 30
 
-This repo illustrates the projects I worked on which enabled me to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) Clojure/ClojureScript (clj/cljs) developer.
+It's JavaScipt 30, but ClojureScript :)  These are the steps that I took to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.  The purpose of this repo was to provide myself with a structured way to learn CLJ.  By providing small and approachable real-world programs, I was able to focus on understanding CLJS syntax and the functional programming paradigm.
 
-Aside from teaching myself `clj/cljs`, I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.
+So why take the time and annotate this so heavily?  I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.
 
 In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
 
