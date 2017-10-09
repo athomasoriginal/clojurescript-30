@@ -88,6 +88,4 @@ and the above list goes on, but the ones I mentioned are the ones that are more 
 
 Big thanks also goes to [Modern CLJS](https://github.com/magomimmo/modern-cljs) and the whole of the [clj/cljs community](http://clojurians.net/) which is by far one of the friendliest, most willing and easily accesibly communities I have experienced.  Treat them with respect!
 
-
-
- By following along with Wes Bos's course I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.
+By following along with Wes Bos's course, and the help of some insanely talented clojurians, I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.
