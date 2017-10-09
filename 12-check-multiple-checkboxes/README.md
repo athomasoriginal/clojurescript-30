@@ -10,7 +10,7 @@ In this excrecise, you are going to work with
 
 ## Escaping Strings
 
-As a reminder, the `single-quote` is not something used inside of clojure strings.  Therefore, in order to have a quite in a string, you would need to escape them like so:
+As a reminder, the `single-quote` is not something used inside of clojure strings.  Therefore, in order to have a qoute in a string, you would need to escape them like so:
 
 ```clojure
 (p "This is a \"string\"")
@@ -44,9 +44,9 @@ This is common in imperative programming styles, like JS, but in functional lang
 
 > If you are trying to implement something in clojure and the language seems to be fighting you, take a beat.  There is a good chance there is a more idiomatic way to do it.
 
-In this case, we come up against two CLJ features:
+In this case, we are butting our head against a key CLJ feature:
 
-* data is immutable - specific to us though: lexically scoped variables cannot be mutated e.g. `let`
+* data is immutable - specifically, lexically scoped variables cannot be mutated e.g. `let`
 
 Turns out the answer to working with mutable local variables is to use `reduce` or `reccur`.  Consider the following:
 
