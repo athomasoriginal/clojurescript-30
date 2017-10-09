@@ -67,7 +67,7 @@ Each repo represents a stand alone project and will contain its own README where
 * 09-array-cardio-2
 * 10-html5-canvas
 * 11-dev-tool-tricks
-* [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-scheck-multiple-checkboxes)
+* [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-check-multiple-checkboxes)
 
 # Background
 
