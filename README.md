@@ -73,7 +73,7 @@ Each repo represents a stand alone project and will contain its own README where
 
 Please note that I am a developer by trade, so I went into this with a solid understanding of development patterns and languages and most importantly **how** to learn languages.
 
-If you are to this, or any other language, do not let the above paragraph discourage you.  When I wrote this I was, still and likely never will be a programming prodigy.  What I do is grind it out and never stop myself from asking questions, no matter how foolish they may seem.
+If you are new to programming, do not let the above paragraph discourage you.  When I wrote this I was, still and likely never will be a programming prodigy.  What I do is grind it out and never stop myself from asking questions, no matter how foolish they may seem.
 
 # Special Thanks
 
