@@ -1,8 +1,8 @@
 # ClojureScript 30
 
-These are the steps that I took to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.  The purpose of me going through this excercise is the same as someone who is doing it with JS. It's a structured way to learn CLJ and the functional programming paradigm.  Wes Bos has done an amazing job of designing small and approachable real-world programs for us to build and I firmly believe that if you share my learning style, you will find great value through his courses!
+This repo contains my answers to Wes Bos's `JavaScript 30` challenge.  By following along with Wes Bos's course I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.  The reason I did this was because I needed a structured way to learn CLJ and the functional programming paradigm.  Wes Bos has done an amazing job of designing small and approachable real-world programs for us to build and I firmly believe that if you share my learning style, you will find great value in taking up the `JavaScript 30` challenge.
 
-So why take the time and annotate this so heavily?  I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.
+Having said this, I have a few other goals in the process of learning the language.  You will notice this repo is heavily annotated.  Why do this?  I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.  I want to clarify here that the CLJ community is amazing.  Check our the Clojurians Slack Channel and you will see what I mean.
 
 In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
 
