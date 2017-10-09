@@ -1,10 +1,8 @@
 # ClojureScript 30
 
-This repo contains my answers to Wes Bos's [JavaScript 30](https://javascript30.com/) challenge.  By following along with Wes Bos's course I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.  My overall goal was to learn CLJ and the functional programming paradigm.  Enter JavaScript 30.  Wes Bos has done an amazing job of designing a course full of small and approachable real-world programs you can build without any setup...if your using JavaScript that is ;)
+This repo contains my answers to Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in ClojureScript.  Wes Bos has done an amazing job of designing a course full of small and approachable real-world programs you can build without any setup...if your using JavaScript that is ;)
 
-I also had a few additional goals.  You may have noticed this repo is heavily annotated.  I did this because I believe that `clj/cljs` is missing approachable documentation.  Maybe this repo can help round out some of the missing components for future learners.  I want to clarify here that the CLJ community is amazing.  Check our the Clojurians Slack Channel and you will see what I mean.
-
-In this spirit, my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
+My goal when I set out to do this was just to learn CLJ and functional programming.  After working through a few examples, I was actually suprised that some things which I anticipated would be easy, were actually difficult to execute.  I remember hitting my head against the wall trying to figure out why the simplest piece of code owuld not run.  In this spirit,  my hope is that people find this repo a helpful learning tool.  My recommended approach to using this repo:
 
 * Start with the [Getting Started](getting-started) guide below
 * Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
@@ -87,3 +85,7 @@ I want to thank [wes bos](https://github.com/wesbos) for providing an amazing co
 and the above list goes on, but the ones I mentioned are the ones that are more interesting to me and likely more well known.
 
 Big thanks also goes to [Modern CLJS](https://github.com/magomimmo/modern-cljs) and the whole of the [clj/cljs community](http://clojurians.net/) which is by far one of the friendliest, most willing and easily accesibly communities I have experienced.  Treat them with respect!
+
+
+
+ By following along with Wes Bos's course I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.
