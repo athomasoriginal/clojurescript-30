@@ -60,7 +60,7 @@ Turns out the answer to working with mutable local variables is to use `reduce` 
            html-elements))
 ```
 
-That's better.  We can now keep track of state using the `accumulator`.  So we run our `anonymous function` or each item in our array and for each one, when it is done, we tell the next time this function runs, the state we left off at which was recorded in the `accumulator`.  This has some interesting affects on our code.
+That's better.  We can now keep track of state using the `accumulator`.  So we run our `anonymous function` or each item in our list and for each one, when it is done, we return what the state we left off at should look like when we run this function against the next item in the list. This has some interesting affects on our code.
 
 Consider that in the JS example, we can update `inBetween` on the spot.  In CLJS example, the state is updated at the very end based on what we return.  This means we cannot change the state in the middle of the anonymous function.  The result is that we need to perform a few extra steps per `clause`.  Which leads us to our next point:  Control Flow.
 
@@ -85,7 +85,7 @@ One difficult part for me in understanding control flow is when to use different
       expression 1)
 ```
 
-In the above, both `when` forms are going to be evaluated.  This means, if they are both truth, they both run.  Therefore, if you only want one condition to ever run in this set of logic, opt for `cond`, `if` or `case`.
+In the above, both `when` forms are going to be evaluated.  This means, if their conditions are both truthy, they both run.  Therefore, if you only want one condition to ever run in this set of logic, opt for `cond`, `if` or `case`.
 
 > We want to perform side-effects
 
@@ -117,9 +117,9 @@ I think of `when` as:  `When true` or `when false`
 
 Only one of the above is going to run.
 
-> We can have more than two conditions
+> We want more than two conditions
 
-When you compare the above to `if`, there are a lot more conditions we check for
+`if` only provides two conditions: The first is what happens when the condition is true, and the second is what to do when it is false. `cond` is going to let you have as many as you like.
 
 [Mor on cond](http://www.matthewboston.com/blog/understanding-clojure-cond-and-condp/)
 
