@@ -3,11 +3,14 @@
   (:require        [goog.string :as gstr] goog.string.format)
   (:require-macros [multiple-checkboxes.macros :refer [p pp]]))
 
-(def appState (atom { :lastChecked nil}))
+
+(def app-state (atom { :last-checked nil}))
+
 
 ;; functions to help us get DOM elements
 (defn get-checkboxes []
   (.querySelectorAll js/document ".inbox input[type=\"checkbox\"]"))
+
 
 ;; protocol
 (extend-type js/NodeList
@@ -18,31 +21,32 @@
 (defn handle-check [e]
   (this-as this
     (when (and (.. e -shiftKey) (.. this -checked))
-      (reduce (fn [inBetween element]
+      (reduce (fn [in-between? checkbox]
                   (cond
-                    ;; 1. the shift-clicked checkbox
-                    (identical? element this)
+                    ;; 1. checkbox user shift-clicked
+                    (identical? checkbox this)
                     (do
-                      (set! (.. element -checked) true)
-                      (not inBetween))
+                      (set! (.. checkbox -checked) true)
+                      (not in-between?))
 
-                    ;; 2. the lastClicked checbox
-                    (identical? (get @appState :lastChecked) element)
+                    ;; 2. checkbox last checked
+                    (identical? (get @app-state :last-checked) checkbox)
                     (do
-                      (set! (.. element -checked) true)
-                      (not inBetween))
+                      (set! (.. checkbox -checked) true)
+                      (not in-between?))
 
-                    ;; 3. automatically check the checkbox - its inBetween the north and south wall
-                    (true? inBetween)
+                    ;; 3. in between the last checked and shift-clicked checkbox
+                    (true? in-between?)
                     (do
-                      (set! (.. element -checked) true)
+                      (set! (.. checkbox -checked) true)
                       true)
 
-                    ;; 4.  Do nothing
+                    ;; 4.  outside of last checked and shift-clicked checkbox
                     :else false))
               false
               (get-checkboxes)))
-    (swap! appState assoc :lastChecked this)))
+    (swap! app-state assoc :last-checked this)))
+
 
 (doseq [checkbox (get-checkboxes)]
   (.addEventListener checkbox "click" handle-check))
