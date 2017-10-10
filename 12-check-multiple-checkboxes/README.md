@@ -173,3 +173,5 @@ Turns out, an `s-expression` and a `form` are the same thing.  I guess, if we ha
 * [Clojure by Example](https://kimh.github.io/clojure-by-example/#if)
 * [Clojure Terminology Guide](http://clojure-doc.org/articles/language/glossary.html)
 * [Control Flow](https://practicalli.github.io/clojure/basic-clojure/control-flow.html)
+* [Namespaces and Clojure](https://stuartsierra.com/2016/clojure-how-to-ns.html)
+* [Readable Clojure](http://tonsky.me/blog/readable-clojure/)
