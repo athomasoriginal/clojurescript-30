@@ -8,6 +8,25 @@ In this excrecise, you are going to work with
 * [Tips](#tips)
 * [Resources](#resources)
 
+# Requirements
+
+Before trying out this repo please ensure you have a cljs environment setup.  See the [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started)
+
+# Quickstart
+
+Run the following comamnds from the root of the `12-check-multiple-checkboxes` repo
+
+**1.  Build and watch the project**
+
+```bash
+boot dev
+```
+
+**2.  Sanity Check**
+
+The above step will compile your `cljs` code in the `src` directory and create a new directory in the root of this project called `target`.  Inside of `target` you will find an `index.html` file.  Open that file in a browser and you should see a blank white screen. Open the web developer console and you should see a console log of `Hello World!`.
+
+
 ## Escaping Strings
 
 As a reminder, the `single-quote` is not something used inside of clojure strings.  Therefore, in order to have a qoute in a string, you would need to escape them like so:
