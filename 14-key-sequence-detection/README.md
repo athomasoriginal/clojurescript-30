@@ -2,11 +2,10 @@
 
 In this excercise you will review the following concepts
 
-* [Equality](#equality)
-* [Data Structures](#data-structures)
-* [Code Cleanup](#code-cleanup)
-* [Slice](#slice)
-* [Higher Order Functions](#higher-order-functions)
+* [Lessons](#lessons)
+  - [Slice](#slice)
+  - [Queue](#queue)
+  - [Code Cleanup](#code-cleanup)
 
 # Requirements
 
