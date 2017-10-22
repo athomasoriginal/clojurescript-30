@@ -119,7 +119,7 @@ You could use `set` or `create` to name the function, from conversations on cloj
 
 # Resources
 
-[Atom v. Refs](http://tarynsauer.tumblr.com/post/77631451200/clojure-should-i-use-atoms-or-refs)
+* [Atom v. Refs](http://tarynsauer.tumblr.com/post/77631451200/clojure-should-i-use-atoms-or-refs)
 https://learnxinyminutes.com/docs/clojure/
-[Understanding persistent vectors](http://hypirion.com/musings/understanding-persistent-vector-pt-1)
-[Why clojure goes fast](http://clojure-goes-fast.com/)
+* [Understanding persistent vectors](http://hypirion.com/musings/understanding-persistent-vector-pt-1)
+* [Why clojure goes fast](http://clojure-goes-fast.com/)
