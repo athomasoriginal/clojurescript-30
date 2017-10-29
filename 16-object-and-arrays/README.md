@@ -24,7 +24,7 @@ These are the terms used in Clojure.  They are not interchangeable, rather they 
 
 * Var
 * Symbols
-* Data Structure
+* Data Types
 * resolved Symbol
 * value
 * root binding
@@ -36,7 +36,7 @@ These are the terms used in Clojure.  They are not interchangeable, rather they 
 
 # Symbols
 
-A **Symbol** is [Data Structure](https://clojure.org/reference/data_structures).  Here are some examples of **Symbols**:
+A **Symbol** is [Data Types](https://clojure.org/reference/data_structures).  Here are some examples of **Symbols**:
 
 ```clojure
 (def my-name "Jerald")
@@ -44,7 +44,7 @@ A **Symbol** is [Data Structure](https://clojure.org/reference/data_structures).
 (+ 1 2)
 ```
 
-In the above, `+` and `my-name` are **Symbols**.  Comparatively, `1` and `2` are **Numbers** which are a different kind of **Data Structure**.  How do I know that `my-name` is a **Symbol**?  Is it not a **Var**?  I am going to hold off on the **Var** question for the moment, and show you that `my-name` is a **Symbol** using the `quote` macro:
+In the above, `+` and `my-name` are **Symbols**.  Comparatively, `1` and `2` are **Numbers** which are a different kind of **Data Type**.  How do I know that `my-name` is a **Symbol**?  Is it not a **Var**?  I am going to hold off on the **Var** question for the moment, and show you that `my-name` is a **Symbol** using the `quote` macro:
 
 ```clojure
 (def my-name "Jerald")
