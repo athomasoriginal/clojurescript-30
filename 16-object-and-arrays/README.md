@@ -54,7 +54,11 @@ In the above, `+` and `my-name` are **Symbols**.  Comparatively, `1` and `2` are
 my-name ;; "Jared" - resolved Symbol
 ```
 
-When we did `'my-name` we tell clojure to show us the Symbol.  However, writing `my-name` is telling clojure to resolve a Symbol called `my-name` which is mapped to a Var.  The end result is we replace the `my-name` Symbol with a **value**.  In this case, the **value** of `my-name` is `"Jared"`.
+When we did `'my-name` we tell clojure to show us the Symbol.  However, writing `my-name` is telling clojure to resolve a Symbol called `my-name` which is mapped to a Var.  In other words, its like this:
+
+> Hey current `namespace`!  I have a **Symbol** called `my-name`, do you have a **Var** mapped to it?  You do?  Awesome!  Please get me that **Var** and I will resolve it.
+
+The end result is we replace the `my-name` Symbol with a **value**.  In this case, the **value** of `my-name` is `"Jared"`.
 
 Please note that a Symbol is not a String.
 
