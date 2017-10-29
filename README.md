@@ -70,7 +70,8 @@ Each repo represents a stand alone project and will contain its own README where
 * [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-check-multiple-checkboxes)
 * 13-html5-video-player
 * [14-key-sequence-detection](https://github.com/tkjone/clojurescript-30/tree/master/14-key-sequence-detection)
-*  [15-slide-in-on-scroll](https://github.com/tkjone/clojurescript-30/tree/master/15-slide-in-on-scroll)
+* [15-slide-in-on-scroll](https://github.com/tkjone/clojurescript-30/tree/master/15-slide-in-on-scroll)
+* [16-object-and-arrays](https://github.com/tkjone/clojurescript-30/tree/master/16-object-and-arrays)
 
 # Background
 
