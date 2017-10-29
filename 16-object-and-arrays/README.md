@@ -49,11 +49,11 @@ This is how you declare a **Var** in Clojure:
 
 * A **Var** is a mutable container
 * A **Var** declared with `def` is going to always become global in your namespace
-* A **Var** references its _binding_ (_value_).  In the above, `my-name` (_var_) refernces `"Jerald"` (_binding_ or _value_)
+* A **Var** references its _binding_ (_value_).  In the above, `my-name` (_var_) refernces `"Jerald"` (_binding_)
 * A **Var** can have two types of binding:  _root binding_ and _dynamic thread-local binding_
-* A **Var** can have several sub-types: _static_, _dynamic_, _free_, _local_
+* A **Var** can be of several sub-types: _static_, _dynamic_, _free_
 
-**The root binding**
+> The root binding
 
 All **Vars** and their subtypes have a **root binding**.  A root binding is the initial value associated with your variable.  For example:
 
@@ -67,14 +67,14 @@ In the above, "Thomas" is the **root binding**.  Having said this, you do not ne
 (def name)
 ```
 
-In the above example, the **Var** above was not bound a `value` when it was created, so we consider this **unbound**.
+In the above example, the **Var** above was not bound to a `value` when it was created, so we consider this **unbound**.
 
-**Var search order**
+> Var search order
 
 
 We will look in **local scope** first and than move to the **global scope**
 
-**Re-bind Vars**
+> Re-bind Vars
 
 ```clojure
 (def name "Thomas")
@@ -95,7 +95,7 @@ A **Symbol** is [Data Type](https://clojure.org/reference/data_structures).  Her
 (+ 1 2)
 ```
 
-In the above, `+` and `my-name` are **Symbols**.  Comparatively, `1` and `2` are **Numbers** which are a different kind of **Data Type**.  This could be confusing we said in the above section that `my-name` is a **Var**.  The truth is that the reaility is a little more complex and for most of your development process, does not really matter, but keep the following in mind:
+In the above, `+` and `my-name` are **Symbols**.  Comparatively, `1` and `2` are **Numbers** which are a different kind of **Data Type**.  This could be confusing because in above section we said that `my-name` is a **Var**.  The truth is that the reaility is a little more complex and for most of your development process, does not really matter, but keep the following in mind:
 
 * `my-name` is a **Symbol** which references a **Var**
 * When we reference a **Symbol** the symbol knows where to find a **Var** and the **Var** is going to return it's binding.
@@ -105,4 +105,16 @@ This distinction is going to help when / if you really need to dive into CLJ/S c
 
 # Assignment vs Binding
 
-When we talk about variables in clojure we do not say **assigning**, we actually say **binding**.  The difference is a tricky one to explain, and it might be more conceptual than anything else.  Suffice to say, use the terminology **binding** and not **assigning**
+When we talk about variables in clojure we do not say **assigning**, we actually say **binding**.  I like to think that one of the key differences is how assigning vs. binding looks.  In JS, you would do this to create a variable:
+
+```javascript
+var myName = "Jay"
+```
+
+In the above example, the `=` is an example of an [assignment operator](https://www.w3schools.com/js/js_assignment.asp).  Clojure does not have assignment operators as you can see in the way we declare a **Var**.
+
+```clojure
+(def my-name "Jay")
+```
+
+This seems to be the only way to see the differene in syntax.  When it comes to Clojure internals, there is likely other differences, but for now, the takeaway is we don't assign in CLJ/S we bind.
