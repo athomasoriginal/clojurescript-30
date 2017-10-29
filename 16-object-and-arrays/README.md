@@ -1,14 +1,16 @@
 # Object and Array
 
-Wes took a look at `assignment v. reference` in JavaScript for this lesson.  I used this lesson to explore some of the foundational pieces of clj/s:
+Wes took a look at `assignment v. reference` in JavaScript for this lesson.  I used this lesson to explore the equivalent concept in CLJ/S:
 
+0. [Terminology](#terminology)
 1. [Symbols](#Symbols)
 2. [Vars](#Vars)
 3. [Assignment vs. Binding](#Assignment-vs-Binding)
 
 # Lesson
 
-I work as a developer professionally and I found this lesson refreshing because it can be easy to forget how these seemingly "easy" concepts are actually very challenging to thoroughly understand.  Especially for someone new in general.  If I had to teach someone these concepts I would have to sit with them for a while because I am not sure the best approach.  These notes go deeper than most would care, but understanding that knowing the rules of a language are imperative to mastery, I can't help but think that this is important.  Maybe even from the beginning.  Having said this, it is mind blowing how challening explaining the difference between a **key**, **Symbol** and **Var** is.  Likely because when someone new is looking at them they would immediatley think they are all just **Strings**.  Food for thought.
+I work as a developer professionally and I found this lesson refreshing because it can be easy to forget how these seemingly "basic" concepts are difficult for professional and new developers alike to fully grasp.  This being said, these are notes that helped me sort this out.  Consider the challenge that is explaining the difference between a **key**, **Symbol** and **Var**.  I believe a core challenge here is that someone new is looking at them they would immediatley think they are all just **Strings**  With this sadi, this lesson is not done and I will likely revisit this several more times to improve and clarify where possible, but for now, I feel it is a good start.
+
 
 # Resources
 
@@ -18,13 +20,13 @@ Getting into the nitty-gritty's of all this can be very challenging.  What I hav
 * http://fasttrackclojure.blogspot.ca/2010/10/what-no-variables-in-clojure.html
 * https://8thlight.com/blog/aaron-lahey/2016/07/20/relationship-between-clojure-functions-symbols-vars-namespaces.html
 
-# Terminology?
+# Terminology
 
-These are the terms used in Clojure.  They are not interchangeable, rather they refer to one clearly defined idea.  The spelling is important.  If I get the spelling wrong in this document, I likely messed up.
+These are the terms used in Clojure.  They are not interchangeable, rather they each refer to one clearly defined idea.  The spelling is important.  If I get the spelling wrong in this document, I likely messed up.
 
 * Var
-* Symbols
-* Data Types
+* Symbol
+* Data Type
 * resolved Symbol
 * value
 * root binding
@@ -36,7 +38,7 @@ These are the terms used in Clojure.  They are not interchangeable, rather they 
 
 # Symbols
 
-A **Symbol** is [Data Types](https://clojure.org/reference/data_structures).  Here are some examples of **Symbols**:
+A **Symbol** is [Data Type](https://clojure.org/reference/data_structures).  Here are some examples of **Symbols**:
 
 ```clojure
 (def my-name "Jerald")
