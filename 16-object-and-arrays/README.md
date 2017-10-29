@@ -76,7 +76,7 @@ In the above, you created a **Var**.  In general, we could say that you created 
 
 This distinction is going to help when / if you really need to dive into CLJ/S code.  For a great overview of this, please see [this article](https://8thlight.com/blog/aaron-lahey/2016/07/20/relationship-between-clojure-functions-symbols-vars-namespaces.html)
 
-I also want to not that we can also refer to the **Vars** value as its binding.  Further, all **Vars** defined using **def** become global - no matter where they are defined.  E.g. even if they are in a deeply nested function.
+I also want to note that we can also refer to the **Vars** value as its binding.  Further, all **Vars** defined using **def** become global - no matter where they are defined.  E.g. even if they are in a deeply nested function.
 
 
 ## What kinds of Vars are there?
