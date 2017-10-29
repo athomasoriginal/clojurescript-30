@@ -3,9 +3,9 @@
 Wes took a look at `assignment v. reference` in JavaScript for this lesson.  I used this lesson to explore the equivalent concept in CLJ/S:
 
 0. [Terminology](#terminology)
-1. [Symbols](#Symbols)
-2. [Vars](#Vars)
-3. [Assignment vs. Binding](#Assignment-vs-Binding)
+1. [Symbols](#symbols)
+2. [Vars](#vars)
+3. [Assignment vs. Binding](#assignment-vs-binding)
 
 # Lesson
 
