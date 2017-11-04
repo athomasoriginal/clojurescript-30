@@ -39,7 +39,6 @@
 
 (defn move-shadow
   [e]
-  (p e)
   (this-as this
     (let [width  (.-offsetWidth hero)
           height (.-offsetHeight hero)
