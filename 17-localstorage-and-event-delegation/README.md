@@ -7,6 +7,26 @@ For this excercise, I focused on the JS interop aspects of CLJS.  By this I mean
 * [how to not do HTML in CLJS](#how-to-not-do-html)
 
 
+# Requirements
+
+Please ensure you have a clojure environment running locally - see [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started) if you need to set one up.
+
+
+# Quickstart
+
+Run the following comamnds from the root of the `17-localstorage-and-event-delegation`
+
+**1.  Run the projcet**
+
+```bash
+boot dev
+```
+
+**2.  Visit the app**
+
+http://localhost:3000/
+
+
 # Apply
 
 Wes used `array.join('')` in the video series.  There is nothing quite like this in clojurescript.  We can do something similar using reduce or apply.  I opted to use apply because I have not had the opportunity thus far.  This is what my code looked like
