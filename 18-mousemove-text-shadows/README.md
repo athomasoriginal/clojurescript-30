@@ -51,7 +51,7 @@ function moveShadow (e) {
 }
 ```
 
-In the above we have local mutable state, or state that change within the function.  This is an imperative approach.  You can do something like this in Clojure, but clojure will fight you.  The result will be code that is confusing and unmaintainable.  SO rather than imperative, we can try a more functional approach.
+In the above we have local mutable state, or state that changes within the function.  This is an imperative approach. There is nothing wrong with this for imperative languages and you can do something like this in Clojure, but clojure will fight you.  The result will be code that is confusing and unmaintainable.  So rather than imperative, we can try a more functional approach.
 
 A functional approach could be like this:
 
@@ -63,20 +63,9 @@ A functional approach could be like this:
     (if (not= this (.-target e))
       [(+ x (.. e -target -offsetLeft)) (+ y (.. e -target -offsetTop))]
       [x y])))
-
-
-(defn move-shadow
-  [e]
-  (this-as this
-    (let [width  (.-offsetWidth hero)
-          height (.-offsetHeight hero)
-          [x y]  (get-xy e this)
-          x-walk (calc-x-walk x walk width)
-          y-walk (calc-y-walk y walk height)]
-      (set! (.. text -style -textShadow) (make-text-shadow x-walk y-walk)))))
 ```
 
-`get-xy` is the rewrite of the variable re-assignment we see in the JS solution.  In this example, we choose to not set variables that are re-assigned, but create a function that returns the original `x and y` or the modified `x and y`.
+`get-xy` is the rewrite of the variable re-assignment we see in the JS solution.  In this example, we choose to not set variables that are re-assigned, but create a function that returns the original `x and y` or the modified `x and y`.  We can now use the above function inside of our `shadow-move` function. 
 
 
 # Destructuring Clojurscript
