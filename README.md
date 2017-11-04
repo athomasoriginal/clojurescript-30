@@ -73,6 +73,7 @@ Each repo represents a stand alone project and will contain its own README where
 * [15-slide-in-on-scroll](https://github.com/tkjone/clojurescript-30/tree/master/15-slide-in-on-scroll)
 * [16-object-and-arrays](https://github.com/tkjone/clojurescript-30/tree/master/16-object-and-arrays)
 * [17-localstorage-and-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/17-localstorage-and-event-delegation)
+* [18-mousemove-text-shadows](https://github.com/tkjone/clojurescript-30/tree/master/18-mousemove-text-shadows)
 
 # Background
 
