@@ -65,7 +65,24 @@ A functional approach could be like this:
       [x y])))
 ```
 
-`get-xy` is the rewrite of the variable re-assignment we see in the JS solution.  In this example, we choose to not set variables that are re-assigned, but create a function that returns the original `x and y` or the modified `x and y`.  We can now use the above function inside of our `shadow-move` function. 
+Here is what the above looks like in JS if it makes it a little clearer
+
+```javascript
+function getXY (e this) {
+  const { offsetX: x, offsetY: y } = e;
+
+  if ( this !== e.target ) {
+    const modx = x + e.target.offsetLeft
+    const mody = y + e.target.offsetTop
+    return [modx, mody]
+  }
+
+  return [x, y]
+}
+```
+
+`get-xy` is the rewrite of the variable re-assignment we see in the JS solution.  In this example, we choose to not set variables that are re-assigned, but create a function that returns the original `x and y` or the modified `x and y`.  We can now use the above function inside of our `shadow-move` function.
+
 
 
 # Destructuring Clojurscript
