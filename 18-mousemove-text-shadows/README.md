@@ -1,11 +1,10 @@
 # Mouse Move
 
+This lesson presented a good opportunity to use `Math` and challenge the imperative approach to programming with the functional approach.
+
 * [Math](#math)
 * [Functional Thinking](#functional-thinking)
 * [Destructuring Clojurscript](#destructuring-javascript)
-
-* what happens when a variable is assigned in global and than a parameter has the same name?
-
 
 # Requirements
 
