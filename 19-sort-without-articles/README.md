@@ -21,13 +21,13 @@ The above will alphabetically sort things for you.  In JS you would have to pass
 
 # Regex
 
-Regex always feel a oddly different when I write them in clojure, so I wanted to note how to write case-insensitive regexes here:
+Regex always feels oddly different when I write them in clojure, so I wanted to note how to write case-insensitive regexes here:
 
 ```clojure
  #"(?i)a |the |an "
 ```
 
-As you cal see, you prefix with `(?i)`. Most everything else about regexes is usually the same, but you get odd moments like the above where your just left wondering.
+As you can see, you prefix with `(?i)`. Most everything else about regexes is usually the same, but you get odd moments like the above where your just left wondering.
 
 
 # Strip
