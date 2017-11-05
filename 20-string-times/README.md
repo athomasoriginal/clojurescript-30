@@ -1,6 +1,6 @@
 # String Times
 
-I liked this lesson because it provided an opportunity to dive explore strings and numbers response to math in Clojure.
+I liked this lesson because it provided an opportunity to explore how strings and numbers respond to math in Clojure.
 
 
 * [Multiplication and Strings](#multiplication-and-strings)
