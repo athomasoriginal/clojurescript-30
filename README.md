@@ -75,6 +75,7 @@ Each repo represents a stand alone project and will contain its own README where
 * [17-localstorage-and-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/17-localstorage-and-event-delegation)
 * [18-mousemove-text-shadows](https://github.com/tkjone/clojurescript-30/tree/master/18-mousemove-text-shadows)
 * [19-sort-without-articles](https://github.com/tkjone/clojurescript-30/tree/master/19-sort-without-articles)
+* [20-string-times](https://github.com/tkjone/clojurescript-30/tree/master/19-string-times)
 
 # Background
 
