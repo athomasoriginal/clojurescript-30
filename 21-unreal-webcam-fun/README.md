@@ -20,7 +20,7 @@ This is more of a note, but sometimes you might try to use a JS method and be co
     (.catch handle-promise-err)))
 ```
 
-By using the #js macro, I am creating and passing a JS object to `.getUserMedia`
+By using the `#js` macro, I am creating and passing a JS object to `.getUserMedia`
 
 
 # Thread v. dot dot macro
@@ -30,12 +30,12 @@ You are going to notice that I use the `->` macro for the first time in this ser
 
 # Require from Google Closure
 
-Take a look at [this articles](https://www.martinklepsch.org/posts/requiring-closure-namespaces.html) for more information.
+Take a look at [this article](https://www.martinklepsch.org/posts/requiring-closure-namespaces.html) for more information.
 
 
 # Time Intervals
 
-Lets say you want to `console.log` a piece of code once every 2 seconds.  To do this in JavaScript, you would use something like this:
+Lets say you want to `console.log` something once every 2 seconds.  To do this in JavaScript, you would use something like this:
 
 ```javascript
 setInterval(() => console.log('tick'), 1000)
@@ -120,7 +120,7 @@ This last one was a little tricky to figure out how to use at all.  More info on
 I only do this in this lesson because I wanted to align with wes's lesson set.  Normally, this would not be the way to do it, but it is good to know how this would be done.
 
 ```clojure
-set! js/takePhoto #(...)
+(set! js/takePhoto #(...))
 ```
 
-Note that the naming convention is also wrong.  This was just done for this lecture.  Remember that `lisp-case` is not commonly used in JS.
+Note that the naming convention for the `takePhoto` function is not idiomatic JS.  This was just done for this lesson.  Remember that `lisp-case` is not commonly used in JS.
