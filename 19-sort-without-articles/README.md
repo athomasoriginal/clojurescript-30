@@ -6,6 +6,26 @@ This lesson goes over things like regexes and comparators
 * [Strip](#strip)
 * [Regex](#regex)
 
+# Requirements
+
+Please ensure you have a clojure environment running locally - see [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started) if you need to set one up.
+
+
+# Quickstart
+
+Run the following comamnds from the root of the `18-mousemove-and-text-shadows`
+
+**1.  Run the projcet**
+
+```bash
+boot dev
+```
+
+**2.  Visit the app**
+
+http://localhost:3000/
+
+
 # Sorting
 
 Sorting is not difficult in JS or Clojure, but clojure definitely provides a more terse syntax.
