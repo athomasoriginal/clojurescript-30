@@ -3,7 +3,7 @@
 For this one I did not add the rgb effects and only focused on showing the webcam in the video element and taking a picture.  The other items have been done before and I spent more time researching more idiomatic clojure code
 
 * [Working with Native JS Functions](#working-with-native-js-functions)
-* [Thread v. Double Dot Macro](#thread-v.-dot-dot-macro)
+* [Thread v. Double Dot Macro](#thread-v-dot-dot-macro)
 * [Require from Google Closure](#require-from-google-closure)
 * [Time Intervals](#time-intervals)
 * [Add to JS Global Scope](#add-to-js-global-scope)
@@ -23,7 +23,7 @@ This is more of a note, but sometimes you might try to use a JS method and be co
 By using the `#js` macro, I am creating and passing a JS object to `.getUserMedia`
 
 
-# Thread v. dot dot macro
+# Thread v dot dot macro
 
 You are going to notice that I use the `->` macro for the first time in this series.  I am going to opt for this going forward.  It appears to be the preferred option based on conversation I have had with other **clojurians**.
 
