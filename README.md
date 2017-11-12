@@ -77,6 +77,7 @@ Each repo represents a stand alone project and will contain its own README where
 * [19-sort-without-articles](https://github.com/tkjone/clojurescript-30/tree/master/19-sort-without-articles)
 * [20-string-times](https://github.com/tkjone/clojurescript-30/tree/master/20-string-times)
 * [21-unreal-webcam-fun](https://github.com/tkjone/clojurescript-30/tree/master/21-unreal-webcam-fun)
+* [34-calendar-fun](https://github.com/tkjone/clojurescript-30/tree/master/34-calendar-fun)
 
 # Background
 
