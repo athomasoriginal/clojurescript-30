@@ -12,15 +12,15 @@ These commands will get the app up and running for local development.  Be sure t
 
 ### CLJS
 
-> run development
+**run development**
 
-**1.  Run the projcet**
+> 1.  Run the projcet
 
 ```bash
 boot dev
 ```
 
-**2.  Visit the app**
+> 2.  Visit the app
 
 http://localhost:3000/
 
@@ -29,9 +29,9 @@ Please note I have not setup tests for the CLJS project as of yet.
 
 ### CLJ
 
-> run development
+**run development**
 
-**1.  Run the projcet**
+> 1.  Run the projcet
 
 ```bash
 boot run
@@ -39,9 +39,9 @@ boot run
 
 Unlike the above, this is just going to run the project and output the results to your terminal.
 
-> run tests
+**run tests**
 
-**1.  Run the tests**
+> 1.  Run the tests
 
 ```bash
 boot test
