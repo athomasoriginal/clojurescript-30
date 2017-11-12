@@ -12,9 +12,9 @@
 
 (defn compare-events
   "Compare second events start time to the first events end time.
-  When second event start time is less than first event end time this results
-  in a conflict.  Conflict returns:  `[ [1 4] [2 3] ]`.  No conflicts returns
-  nil"
+  When second event start time is less than first event start time we have
+  identified a conflict.  Finding conflicting events returns:  `[ [1 4] [2 3] ]`.
+  No conflicts returns nil"
   [x y]
   (let [[s1 e1] x
         [s2 e2] y]
