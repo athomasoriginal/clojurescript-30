@@ -1,8 +1,13 @@
-(ns calendar-fun.core
-  (:gen-class))
+(ns events.core)
 
 
 ;; Helpers
+
+(defn make-event
+  "Make a time event: [\"event name\" [1 4]]."
+  [name, time]
+  (conj [] name, time))
+
 
 (defn events?
   "Check if `events` vector contains more than one event."
@@ -35,10 +40,3 @@
              y xs
              :when (not= x y)]
         (compare-events x y)))))
-
-
-;; Start
-
-(defn -main
-  "Ya double-booked, son!"
-  [& args])

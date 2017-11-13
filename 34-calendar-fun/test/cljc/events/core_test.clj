@@ -1,6 +1,6 @@
-(ns calendar-fun.core-test
+(ns events.core-test
   (:require [clojure.test :refer :all]
-            [calendar-fun.core :refer :all]))
+            [events.core :refer :all]))
 
 
 (deftest find-event-conflicts-test
@@ -17,6 +17,6 @@
 (deftest compare-events-test
   (testing "events should not conflict"
     (is (= (compare-events [1 3] [4 5]) nil)))
-    
+
   (testing "events should conflict"
     (is (= (compare-events [1 3] [2 4]) [[1 3] [2 4]]))))
