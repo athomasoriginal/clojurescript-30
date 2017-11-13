@@ -1,5 +1,5 @@
 (set-env!
-  :source-paths #{"src/cljs" "src/clj" "test/clj"}
+  :source-paths #{"src/cljs" "src/cljc" "test/cljc"}
   :resource-paths #{"resources"}
 
   :dependencies '[[org.clojure/clojure       "1.8.0"]
@@ -36,7 +36,7 @@
 (deftask run
   "Run the clj portion of the project."
   [a args ARG [str] "the arguments for the application."]
-  (require '[calendar-fun.core :as app])
+  (require '[events.core :as app])
   (apply (resolve 'app/-main) args))
 
 
