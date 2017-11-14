@@ -2,8 +2,6 @@
 
 * [Housekeeping](#housekeeping)
 * [Quickstart](#quickstart)
-  - [CLJS](#cljs)
-  - [CLJ](#clj)
 * [Walkthrough](#walkthrough)
 * [todo](#todo)
 
