@@ -32,12 +32,4 @@
         (cljs)
         (target :dir #{"target"})))
 
-
-(deftask run
-  "Run the clj portion of the project."
-  [a args ARG [str] "the arguments for the application."]
-  (require '[events.core :as app])
-  (apply (resolve 'app/-main) args))
-
-
 (require '[adzerk.boot-test :refer [test]])
