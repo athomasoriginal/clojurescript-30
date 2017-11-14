@@ -28,7 +28,7 @@ boot dev
 
 http://localhost:3000/
 
-Please note I have not setup tests for the CLJS project as of yet.
+Try adding some events.  If you add more than 2 events, and some of them conflict, a message will appear in the browsers dev console.
 
 
 **run tests**
