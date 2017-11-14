@@ -36,8 +36,7 @@
 
 
 (defn update-event-end-options
-  [e]
-  (p "sup"))
+  [e])
 
 
 ;; Event Helpers
@@ -48,16 +47,18 @@
 
   (this-as this
     (let [event-name (.. this (querySelector "[name=event_name]") -value)
-          start-time (js/parseInt (.. this (querySelector "[name=event_start_time]") -value))
-          end-time   (js/parseInt (.. this (querySelector "[name=event_end_time]") -value))
+          start-time (js/parseFloat (.. this (querySelector "[name=event_start_time]") -value))
+          end-time   (js/parseFloat (.. this (querySelector "[name=event_end_time]") -value))
           time       (conj [] start-time end-time)]
+
       ;; add new event to app-state
       (swap! app-state conj (events/make-event event-name time))
 
       ;; check for event conflicts
-      (when (and (> (count @app-state) 2)
-                 (events/find-event-conflicts (get-times @app-state)))
-        (p "Oh no, it seems you have conflicting events"))
+      (when (and (>= (count @app-state) 2)
+                 (>= (count (events/find-event-conflicts (get-times @app-state))) 1))
+        (p "Oh no, it seems you have conflicting events")
+        (pp (events/find-event-conflicts (get-times @app-state))))
 
       ;; add new event to events list
       (update-event-container @app-state)
