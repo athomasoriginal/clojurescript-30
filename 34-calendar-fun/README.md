@@ -15,24 +15,24 @@ Please ensure you have a clojure environment running locally - see [Getting Star
 
 These commands will get the app up and running for local development.  Be sure to run the following comamnds from the root of `34_calendar_fun`.
 
-**Local Development**
+## Local Development
 
-> 1.  Run the project
+**1.  Run the project**
 
 ```bash
 boot dev
 ```
 
-> 2.  Visit the app
+**2.  Visit the app**
 
 http://localhost:3000/
 
 Try adding some events.  If you add 2 events, and some of them conflict, a message will appear in the browsers dev console.
 
 
-**Run Tests**
+## Run Tests
 
-> 1.  Run the tests
+**1.  Run the tests**
 
 ```bash
 boot test
