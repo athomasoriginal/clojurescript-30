@@ -5,7 +5,7 @@
 * [Walkthrough](#walkthrough)
 * [Todo](#to-do)
 
-![demo of calendar app](calendar_fun.gif)
+![demo of calendar app](./docs/calendar_fun.gif)
 
 # Housekeeping
 
