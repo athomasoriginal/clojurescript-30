@@ -3,7 +3,7 @@
 * [Housekeeping](#housekeeping)
 * [Quickstart](#quickstart)
 * [Walkthrough](#walkthrough)
-* [todo](#todo)
+* [Todo](#to-do)
 
 
 # Housekeeping
