@@ -15,9 +15,9 @@ Please ensure you have a clojure environment running locally - see [Getting Star
 
 These commands will get the app up and running for local development.  Be sure to run the following comamnds from the root of `34_calendar_fun`.
 
-**run development**
+**Local Development**
 
-> 1.  Run the projcet
+> 1.  Run the project
 
 ```bash
 boot dev
@@ -27,10 +27,10 @@ boot dev
 
 http://localhost:3000/
 
-Try adding some events.  If you add more than 2 events, and some of them conflict, a message will appear in the browsers dev console.
+Try adding some events.  If you add 2 events, and some of them conflict, a message will appear in the browsers dev console.
 
 
-**run tests**
+**Run Tests**
 
 > 1.  Run the tests
 
@@ -44,7 +44,7 @@ The above will run tests for the cljc/event module
 
 > Design a calendar for someone who works 9am-5pm (work-life balance is built into this calendar :wink:).  Each calendar event is a minimum of 15 minutes and must always be incremented in 15 minute blocks. The killer feature for this app is that you calendar must let users know when their events are conflicting with other events on the calendar.
 
-In our Calendar, an `Event` is stored as a vector with a **start time** and **end time**: `[0 4]`.  In this example, the Event is scheduled for `0 (9:00AM) - 4 (12:00PM)`.  As mentioned, Events are scheduled for 15 minute blocks, so this is also a valid Event: `[0.25 2]` which would be `9:15AM - 10:00AM`.
+In our Calendar, an `Event` is stored as a vector with a **start time** and **end time**: `[0 4]`.  In this example, the Event is scheduled for `9 (9:00AM) - 12 (12:00PM)`.  As mentioned, Events are scheduled for 15 minute blocks, so this is also a valid Event: `[9.25 13]` which would be `9:15AM - 1:00PM`.
 
 **Assumptions:**
 
