@@ -36,9 +36,9 @@
   For example, we store the time 9:15 as 9.25. This will convert 9.25 to 9:15."
   [time]
   (let [time-string (str time)
-        [time hour minutes] (match-time time)]
+        [original-time hour minutes] (match-time time-string)]
     (cond
-      (nil? time)
+      (nil? original-time)
       (str time-string ":00")
 
       (= ".25" minutes)
