@@ -57,18 +57,18 @@ In our Calendar, an `Event` is stored as a vector with a **start time** and **en
 
 ## To Do
 
-* Block user from selecting an end time that is before for the start time + visa-versa
-* Cleanup styles.css
-* Improve naming conventions
-* Answers to questions
+- [X] Cleanup styles.css
+- [ ] Block user from selecting an end time that is before for the start time + visa-versa
+- [ ] Improve naming conventions
+- [ ] Answers to questions
   - difference between a list comprehension and for loop
   - why not use map?
   - why not use map and reduce?
   - why not use a loop?
-* Have event use timestamps rather than numbers
-* Add spec
-* Write tests for CLJS code
-* Align code to style guide - conistency
-* Add events to localstorage
-* Add visual indicators so user know there are conflicts
-* Improve organizational structure of application
+- [ ] Have event use timestamps rather than numbers
+- [ ] Add spec
+- [ ] Write tests for CLJS code
+- [ ] Align code to style guide - conistency
+- [ ] Add events to localstorage
+- [ ] Add visual indicators so user know there are conflicts
+- [ ] Improve organizational structure of application
