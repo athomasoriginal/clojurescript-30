@@ -10,39 +10,39 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-      <div class="root round__borders_bottom">
-        <div class="bg bg__top round__borders_top shadow__bottom" role="presentation">
+      <div class="root-app round__btm-brd">
+        <div class="root-bg round-top-brd shadow-btm" role="presentation">
           <h1 class="title">Calendar</h1>
         </div>
 
-        <div class="form__container round__borders_all shadow__bottom_right">
+        <div class="root-form round-all-brd shadow-btm-r">
           <form class="add-event-form">
 
-            <div class="input__container">
-              <label for="event_name" class="input__title">Event Name:</label>
-              <input id="event_name" class="input" type="text" name="event_name" placeholder="Event Name" required>
+            <div class="root-input">
+              <label for="event_name" class="input-label">Event Name:</label>
+              <input id="event_name" class="input-field" type="text" name="event_name" placeholder="Event Name" required>
             </div>
 
-            <div class="input__container">
-              <label for="event_start" class="input__title">Start Time:</label>
-              <select id="event_start" class="input" type="text" name="event_start_time" placeholder="Start Time" required>
+            <div class="root-input">
+              <label for="event_start" class="input-label">Start Time:</label>
+              <select id="event_start" class="input-field" type="text" name="event_start_time" placeholder="Start Time" required>
                 <!-- one value kept here to keep from flashing while JS loads -->
                 <option value="0">9:00</option>
               </select>
             </div>
 
-            <div class="input__container">
-              <label for="event_end" class="input__title">End Time:</label>
-              <select id="event_end" class="input" type="text" name="event_end_time" placeholder="End Time" required>
+            <div class="root-input">
+              <label for="event_end" class="input-label">End Time:</label>
+              <select id="event_end" class="input-field" type="text" name="event_end_time" placeholder="End Time" required>
                 <!-- one value kept here to keep from flashing while JS loads -->
                 <option value="0">9:00</option>
               </select>
             </div>
 
-            <button class="submit_btn" type="submit">Add</button>
+            <button class="submit-btn" type="submit">Add</button>
           </form>
         </div>
-        <div class="events__container round__borders_all shadow__bottom_right">
+        <div class="root-event-container round-all-brd shadow-btm-r">
           <!-- Awaiting my JS -->
         </div>
       </div>

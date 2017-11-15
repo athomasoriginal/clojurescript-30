@@ -13,7 +13,7 @@
 
 (def event-form (.querySelector js/document ".add-event-form"))
 
-(def event-container (.querySelector js/document ".events__container"))
+(def event-container (.querySelector js/document ".root-event-container"))
 
 (def start-time-dropdown (.querySelector js/document "#event_start"))
 

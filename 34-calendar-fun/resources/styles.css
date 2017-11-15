@@ -1,5 +1,7 @@
 /**
+ * -----------------------------------------------------------------------------
  * Resets
+ * -----------------------------------------------------------------------------
  */
 html {
   box-sizing: border-box;
@@ -12,35 +14,83 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
 }
-*, *:before, *:after {box-sizing: inherit; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 input,
 label,
 select,
 button,
-textarea
-{
-	margin:0;
-	border:0;
-	padding:0;
-	display:inline-block;
-	vertical-align:middle;
-	white-space:normal;
-	background:none;
-	line-height:1;
+textarea {
+  margin:0;
+  border:0;
+  padding:0;
+  display:inline-block;
+  vertical-align:middle;
+  white-space:normal;
+  background:none;
+  line-height:1;
 
-	/* Browsers have different default form fonts */
-	font-size:13px;
-	font-family:Arial;
+  /* Browsers have different default form fonts */
+  font-size:13px;
+  font-family:Arial;
 }
 
-input:focus
-{
+input:focus {
 	outline:0;
 }
 
 /**
- * Main
+ * -----------------------------------------------------------------------------
+ * Utils
+ * -----------------------------------------------------------------------------
+ */
+
+
+/**
+ * general
+ */
+
+.shadow-btm {
+	box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .2);
+}
+
+.shadow-btm-r {
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+.round-all-brd {
+  border-radius: 3px 3px 3px 3px;
+}
+
+.round-top-brd {
+  border-radius: 3px 3px 0px 0px;
+}
+
+.round__btm-brd {
+  border-radius: 0px 0px 3px 3px;
+}
+
+/**
+ * font
+ */
+
+.title {
+  color: #FCFBFE;
+  font-weight: 300;
+}
+
+
+/**
+ * -----------------------------------------------------------------------------
+ * Elements (Components)
+ * -----------------------------------------------------------------------------
+ */
+
+/**
+ * App
  */
 
 body {
@@ -57,7 +107,7 @@ body {
   background: linear-gradient(to left, #DEDAFC, #EFEDFD);
 }
 
-.root {
+.root-app {
   min-height: 600px;
   width: 400px;
   background-color: #F8F8FA; /* white */
@@ -71,62 +121,27 @@ body {
 }
 
 /**
- * utils
+ * Calendar Background Squares
  */
 
-.shadow__bottom {
-	box-shadow: 0 6px 6px -6px rgba(0, 0, 0, .2);
-}
-
-.shadow__bottom_right {
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.1);
-}
-
-.title {
-  color: #FCFBFE;
-  font-weight: 300;
-}
-
-.round__borders_all {
-  border-radius: 3px 3px 3px 3px;
-}
-
-.round__borders_top {
-  border-radius: 3px 3px 0px 0px;
-}
-
-.round__borders_bottom {
-  border-radius: 0px 0px 3px 3px;
-}
-
-/**
- * Presentation
- */
-
-.bg {
+.root-bg {
   height: 300px;
   width: 100%;
-}
-.bg__top {
+
   /* gradient */
   background-color: #C7BFFA;
   background: -webkit-linear-gradient(to left, #ACA2F9, #C7BFFA);
   background: linear-gradient(to left, #ACA2F9, #C7BFFA);
-}
-.bg__bottom {
-  border-radius: 0px 0px 3px 3px;
-  background-color: #F8F8FA; /* gray-white */
 }
 
 /**
  * Form
  */
 
-.form__container {
+.root-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 250px;
   width: 85%;
   margin-top: -14em;
@@ -139,50 +154,65 @@ body {
   padding-top: 1em;
 }
 
-.input__container {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 1em;
-}
-.input__container:nth-child(3) {
-  padding-bottom: 0;
-}
-.input__title {
-  color: #C2BBF5; /* Melrose purple */
-  align-self: left;
-  font-weight: bold;
-  padding-bottom: .5em;
-}
-.input {
-  color: #716F7B; /* Raven gray */
-  height: 2em;
-  font-size: 18px;
-}
-.input::placeholder {
-  color: #BABABE; /* French gray */
-}
-.input:focus{
-	border-bottom: 1px solid #C2BBF5; /* Melrose purple */
-}
-.submit_btn {
+/**
+ * Form Button
+ */
+
+.submit-btn {
   height: 15px;
   width: 80%;
   cursor: pointer;
   color: #B9B1F3; /* Perano purple */
 }
 
+
 /**
- * Events
+ * Input
  */
 
-.events__container {
+.root-input {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+}
+
+.root-input:nth-child(3) {
+  padding-bottom: 0;
+}
+
+.input-label {
+  color: #C2BBF5; /* Melrose purple */
+  align-self: left;
+  font-weight: bold;
+  padding-bottom: .5em;
+}
+
+.input-field {
+  color: #716F7B; /* Raven gray */
+  height: 2em;
+  font-size: 18px;
+}
+
+.input-field::placeholder {
+  color: #BABABE; /* French gray */
+}
+
+.input-field:focus{
+	border-bottom: 1px solid #C2BBF5; /* Melrose purple */
+}
+
+/**
+ * Event
+ */
+
+.root-event-container {
   height: 200px;
   width: 85%;
   overflow: scroll;
   background-color: #FFFFFF; /* white */
 }
 
-.event__card {
+.root-event {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,7 +220,8 @@ body {
   padding: 1em 0 1em 0;
   border-left: 3px solid #B8AFF3; /* biloba purple */
 }
-.event__title {
+
+.event-title {
   margin: 0;
   padding-bottom: .5em;
   color: #605D6B; /* smoky gray */
@@ -198,7 +229,8 @@ body {
   width: 85%;
   text-align: left;
 }
-.event__time {
+
+.event-time {
   margin: 0;
   color: #BABABE; /* French gray */
   font-size: 12px;

@@ -6,9 +6,9 @@
 (defn event-html
   "Wrap an event in an event HTML component - returns a string"
   [event]
-  (str "<div class=\"event__card\">"
-         "<p class=\"event__title\">" (event 0) "</p>"
-         "<p class=\"event__time\">" (format-time ((event 1) 0)) " - " (format-time ((event 1) 1)) "</label>"
+  (str "<div class=\"root-event\">"
+         "<p class=\"event-title\">" (event 0) "</p>"
+         "<p class=\"event-time\">" (format-time ((event 1) 0)) " - " (format-time ((event 1) 1)) "</label>"
        "</div>"))
 
 
