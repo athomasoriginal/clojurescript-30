@@ -3,7 +3,7 @@
   (:require        [events.core :as events]
                    [calendar-fun.components.option :refer [time-select-options]]
                    [calendar-fun.components.event  :refer [events-html]]
-                   [calendar-fun.utils.time        :refer [generate-times]])
+                   [calendar-fun.utils.time        :refer [create-time-range]])
   (:require-macros [calendar-fun.macros :refer [p pp]]))
 
 
@@ -18,6 +18,7 @@
 (def start-time-dropdown (.querySelector js/document "#event_start"))
 
 (def end-time-dropdown (.querySelector js/document "#event_end"))
+
 
 
 ;; State helpers
@@ -35,8 +36,12 @@
   (set! (.-innerHTML event-container) (events-html events)))
 
 
-(defn update-event-end-options
-  [e])
+(defn update-event-end-dropdown
+  "Re-populate event end dropdown with updated list of time options."
+  [e]
+  (let [start-time (+ (js/parseFloat (.-value start-time-dropdown)) 0.25)]
+    (set! (.-innerHTML end-time-dropdown) (time-select-options (create-time-range start-time)))))
+
 
 
 ;; Event Helpers
@@ -47,8 +52,8 @@
 
   (this-as this
     (let [event-name (.. this (querySelector "[name=event_name]") -value)
-          start-time (js/parseFloat (.. this (querySelector "[name=event_start_time]") -value))
-          end-time   (js/parseFloat (.. this (querySelector "[name=event_end_time]") -value))
+          start-time (js/parseFloat (.-value start-time-dropdown))
+          end-time   (js/parseFloat (.-value end-time-dropdown))
           time       (conj [] start-time end-time)]
 
       ;; add new event to app-state
@@ -64,20 +69,24 @@
       (update-event-container @app-state)
 
       ;; reset add event form
-      (.reset this))))
+      (.reset this)
+
+      (set! (.-innerHTML end-time-dropdown) (time-select-options (create-time-range 9.25))))))
+
+
 
 
 ;; Event listeners
 
 (.addEventListener event-form "submit" add-event)
 
-(.addEventListener start-time-dropdown "change" update-event-end-options)
+(.addEventListener start-time-dropdown "change" update-event-end-dropdown)
 
 
 ;; Populate HTML
 
-(set! (.-innerHTML start-time-dropdown) (time-select-options (generate-times)))
+(set! (.-innerHTML start-time-dropdown) (time-select-options (create-time-range)))
 
-(set! (.-innerHTML end-time-dropdown) (time-select-options (generate-times)))
+(set! (.-innerHTML end-time-dropdown) (time-select-options (create-time-range 9.25)))
 
 (update-event-container @app-state)
