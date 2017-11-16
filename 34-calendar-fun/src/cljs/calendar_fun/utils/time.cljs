@@ -18,8 +18,10 @@
 (defn generate-times
   "Generates a vector of times.
   For example, `[9 9.25 9.5 ...]`"
-  []
-  (take 33 (iterate inc-15-min  9)))
+  ([]
+   (generate-times 33 9))
+  ([hours start-time]
+   (take hours (iterate inc-15-min start-time))))
 
 
 (defn match-time

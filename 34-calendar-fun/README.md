@@ -58,6 +58,7 @@ In our Calendar, an `Event` is stored as a vector with a **start time** and **en
 ## To Do
 
 - [X] Cleanup styles.css
+- [ ] Use hiccup for component rendering functions
 - [ ] Block user from selecting an end time that is before for the start time + visa-versa
 - [ ] Improve naming conventions
 - [ ] Answers to questions
@@ -72,3 +73,29 @@ In our Calendar, an `Event` is stored as a vector with a **start time** and **en
 - [ ] Add events to localstorage
 - [ ] Add visual indicators so user know there are conflicts
 - [ ] Improve organizational structure of application
+
+## Default Function Arguments
+
+One way to achieve default function arguments is to use clojure's `multi-arity` functionality.  For example, we have the following piece of code:
+
+```clojure
+(defn generate-times
+  "Generates a vector of times.
+  For example, `[9 9.25 9.5 ...]`"
+  []
+  (take 33 (iterate inc-15-min  9)))
+```
+
+Eventually, I realized that I would like to have the `33` and the `9` be dynamic so this function can be resused.  However, the original use case of `33` and `9` are still valid.  To make this happen we can do something like this:
+
+```clojure
+(defn generate-times
+  "Generates a vector of times.
+  For example, `[9 9.25 9.5 ...]`"
+  ([]
+   (generate-times 33 9))
+  ([hours start-time]
+   (take hours (iterate inc-15-min start-time))))
+```
+
+What makes this interesting is because if this was JavaScript, the go-to would likely be add defaults to the args.
