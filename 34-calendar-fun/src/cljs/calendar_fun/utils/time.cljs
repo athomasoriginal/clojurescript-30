@@ -6,6 +6,8 @@
 
 (def fifteen-minutes 0.25)
 
+(def end-of-day 17)
+
 
 ;; Utils
 
@@ -15,13 +17,13 @@
   (+ time fifteen-minutes))
 
 
-(defn generate-times
-  "Generates a vector of times.
+(defn create-time-range
+  "Generates a range of times incrementing in .25 (fifteen min) blocks.
   For example, `[9 9.25 9.5 ...]`"
   ([]
-   (generate-times 33 9))
-  ([hours start-time]
-   (take hours (iterate inc-15-min start-time))))
+   (create-time-range 9))
+  ([start-time]
+   (range start-time  end-of-day fifteen-minutes)))
 
 
 (defn match-time
