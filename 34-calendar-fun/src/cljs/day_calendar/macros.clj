@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns calendar-fun.macros)
+(ns day-calendar.macros)
 
 
 (defmacro p
