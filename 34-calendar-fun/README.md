@@ -35,10 +35,10 @@ Try adding some events.  If you add 2 events, and some of them conflict, a messa
 **1.  Run the tests**
 
 ```bash
-boot test
+boot test-cljs --js-env=node
 ```
 
-The above will run tests for the cljc/event module
+The above will run tests for the cljs.  We only have CLJS code so we are going to do the above.  Why set to node JS env?  Well, because chances are considerably higher that the developer already has node on their local machines compared to phantomjs - phantomJS being the default js environment for `boot-test-cljs`.  The other reason is because while the phantomJS project likely still lives, even the original maintainer was not game to continue developing it since chrome headless was released.
 
 # Walkthrough
 
@@ -59,20 +59,19 @@ In our Calendar, an `Event` is stored as a vector with a **start time** and **en
 
 - [X] Cleanup styles.css
 - [X] Block user from selecting an end time that is before for the start time + visa-versa
+- [X] Improve naming conventions
+- [X] Improve organizational structure of application
 - [ ] Use hiccup for component rendering functions
-- [ ] Improve naming conventions
 - [ ] Answers to questions
   - difference between a list comprehension and for loop
   - why not use map?
   - why not use map and reduce?
   - why not use a loop?
-- [ ] Have event use timestamps rather than numbers
 - [ ] Add spec
 - [ ] Write tests for CLJS code
 - [ ] Align code to style guide - conistency
 - [ ] Add events to localstorage
-- [ ] Add visual indicators so user know there are conflicts
-- [ ] Improve organizational structure of application
+- [ ] More google closure library - goog/dom
 
 ## Default Function Arguments
 
