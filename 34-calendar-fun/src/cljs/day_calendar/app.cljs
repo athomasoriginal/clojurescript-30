@@ -48,8 +48,6 @@
       (swap! app-state conj new-event)
 
       ;; check for event conflicts
-      (p (count @app-state))
-      (p (count (find-conflicts @app-state)))
       (when (and (>= (count @app-state) 2)
                  (>= (count (find-conflicts @app-state)) 1))
         (p "Oh no, it seems you have conflicting events")
