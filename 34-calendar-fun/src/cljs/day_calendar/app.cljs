@@ -1,11 +1,12 @@
 (ns day-calendar.app
-  (:require  [day-calendar.event      :refer [event find-conflicts]]
-             [day-calendar.components :refer [event-card event-cards time-options]]
-             [day-calendar.utils      :refer [time-range]])
+  (:require  [day-calendar.actions                     :refer [add-event]]
+             [day-calendar.utils                       :refer [time-range find-conflicts]]
+             [day-calendar.components.event-card-list  :refer [event-card-list]]
+             [day-calendar.components.time-option-list :refer [time-option-list]])
   (:require-macros [day-calendar.macros :refer [p pp]]))
 
 
-;; state
+; state
 
 (def app-state (atom []))
 
@@ -24,17 +25,17 @@
 
 (defn update-event-container!
   [events]
-  (set! (.-innerHTML event-container) (event-cards events)))
+  (set! (.-innerHTML event-container) (event-card-list events)))
 
 
 (defn update-event-end-dropdown!
   "Re-populate event end dropdown with updated list of time options."
   [e]
   (let [start-time (+ (js/parseFloat (.-value start-time-dropdown)) 0.25)]
-    (set! (.-innerHTML end-time-dropdown) (time-options (time-range start-time)))))
+    (set! (.-innerHTML end-time-dropdown) (time-option-list (time-range start-time)))))
 
 
-(defn add-event!
+(defn handle-add-event!
   [e]
   (.preventDefault e)
 
@@ -42,7 +43,7 @@
     (let [event-name (.. this (querySelector "[name=event_name]") -value)
           start-time (js/parseFloat (.-value start-time-dropdown))
           end-time   (js/parseFloat (.-value end-time-dropdown))
-          new-event  (event :name event-name :start-time start-time :end-time end-time)]
+          new-event  (add-event :name event-name :start-time start-time :end-time end-time)]
 
       ;; add new event to app-state
       (swap! app-state conj new-event)
@@ -59,20 +60,20 @@
       ;; reset add event form
       (.reset this)
 
-      (set! (.-innerHTML end-time-dropdown) (time-options (time-range 9.25))))))
+      (set! (.-innerHTML end-time-dropdown) (time-option-list (time-range 9.25))))))
 
 
 ;; Register event listeners
 
-(.addEventListener add-event-form "submit" add-event!)
+(.addEventListener add-event-form "submit" handle-add-event!)
 
 (.addEventListener start-time-dropdown "change" update-event-end-dropdown!)
 
 
 ;; Init
 
-(set! (.-innerHTML start-time-dropdown) (time-options (time-range)))
+(set! (.-innerHTML start-time-dropdown) (time-option-list (time-range)))
 
-(set! (.-innerHTML end-time-dropdown) (time-options (time-range 9.25)))
+(set! (.-innerHTML end-time-dropdown) (time-option-list (time-range 9.25)))
 
 (update-event-container! @app-state)
