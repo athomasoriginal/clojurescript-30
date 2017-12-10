@@ -1,4 +1,5 @@
-(ns day-calendar.utils)
+(ns day-calendar.utils
+  (:require-macros [day-calendar.macros :refer [p pp]]))
 
 ;; Constants
 
@@ -53,6 +54,9 @@
   `first-events` `:end-time`. When conflicts found - return vector with ID's of
   the conflicting pairs."
   [first-event second-event]
+  (p "events")
+  (pp first-event)
+  (pp second-event)
   (when (< (second-event :start-time) (first-event :end-time))
     [(first-event :id)  (second-event :id)]))
 
@@ -66,6 +70,6 @@
       (remove nil?
         (for [[x :as xs] (take (count sorted-events) (iterate next sorted-events))
                y xs
-               :when (not= x y)]
+               :when (not= (x :id) (y :id))]
           (find-conflict x y))))
     '()))
