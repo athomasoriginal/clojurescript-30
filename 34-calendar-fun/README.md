@@ -61,6 +61,7 @@ In our Calendar, an `Event` is stored as a vector with a **start time** and **en
 - [X] Block user from selecting an end time that is before for the start time + visa-versa
 - [X] Improve naming conventions
 - [X] Improve organizational structure of application
+- [X] Fix `:when` modifier in `find-conflicts`
 - [ ] Use hiccup for component rendering functions
 - [ ] Answers to questions
   - difference between a list comprehension and for loop

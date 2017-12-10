@@ -2,7 +2,7 @@
   (:require
     [cljs.test            :refer-macros [deftest testing is]]
     [day-calendar.actions :refer [add-event]]
-    [day-calendar.utils   :refer [find-conflicts find-conflict]]))
+    [day-calendar.utils   :refer [find-conflicts]]))
 
 
 ;; Fixtures
