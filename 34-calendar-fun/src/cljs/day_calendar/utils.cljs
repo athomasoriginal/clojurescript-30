@@ -54,9 +54,6 @@
   `first-events` `:end-time`. When conflicts found - return vector with ID's of
   the conflicting pairs."
   [first-event second-event]
-  (p "events")
-  (pp first-event)
-  (pp second-event)
   (when (< (second-event :start-time) (first-event :end-time))
     [(first-event :id)  (second-event :id)]))
 
