@@ -104,19 +104,21 @@ What makes this interesting is because if this was JavaScript, the go-to would l
 
 You may notice when I write my functions that produce HTML like `event-card` and `time-option` they are functions that return strings.  Inside of the strings is HTML.  It looks gnarly because of the escape characters (`\`) and concatenation, but when I send that to the the browser, it will render as HTML.
 
-Now while you could continue doing this, Clojure has provided a few libraries that can make writing HTML in our code a little more pleasent to work with:
+Now while you could continue doing this, the Clojure community has provided a few libraries that can make writing HTML in our code a little more pleasent to work with:
 
 >  Side note:  This is tantamount to writing `JSX` or using `createElement` in React.  If you are using Reagenent, they actually use a similar DSL as Hiccup under the hood.
 
-These libraries are called [hiccup](https://github.com/weavejester/hiccup) and [hiccups](https://github.com/teropa/hiccups).  The difference between the two is that `hiccup` is meant to be used in Clojure, whereas `hiccups` is meant to be used in clojurescript.
+These libraries are called [hiccup](https://github.com/weavejester/hiccup) and [hiccups](https://github.com/teropa/hiccups).  The difference between the two is that `hiccup` is meant to be used in CLJ, whereas `hiccups` is meant to be used in CLJS.
 
-In addition to making it easier to write HTML in CLJ/S, with string we run into the following issues:
+In addition to making it easier to write HTML in CLJ/S, when we write the functions with strings instead of something like hiccup/s we run into the following issues:
 
 * With strings it is easy to make mistakes
 * With strings it is difficult to read
 * With strings it is difficult to maintain
 
 The following is a little comparison of what it looks like before and after we implemented hiccup:
+
+**before**
 
 ```clojure
 (defn event-card
@@ -128,7 +130,7 @@ The following is a little comparison of what it looks like before and after we i
        "</div>"))
 ```
 
-hiccup is going to allow you to do this:
+**After**
 
 ```clojure
 (defn event-card
@@ -140,7 +142,7 @@ hiccup is going to allow you to do this:
      [:p  {:class "event-time"} (format-time (event :start-time)) " - " (format-time (event :end-time))]]))
 ```
 
-and Hiccup also provides a way of writing even less code like this:
+**After (again)**
 
 ```clojure
 (defn event-card
