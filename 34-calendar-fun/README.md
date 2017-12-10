@@ -62,14 +62,14 @@ In our Calendar, an `Event` is stored as a vector with a **start time** and **en
 - [X] Improve naming conventions
 - [X] Improve organizational structure of application
 - [X] Fix `:when` modifier in `find-conflicts`
-- [ ] Use hiccup for component rendering functions
+- [X] Use hiccup for component rendering functions
+- [X] Write tests for CLJS code
 - [ ] Answers to questions
   - difference between a list comprehension and for loop
   - why not use map?
   - why not use map and reduce?
   - why not use a loop?
 - [ ] Add spec
-- [ ] Write tests for CLJS code
 - [ ] Align code to style guide - conistency
 - [ ] Add events to localstorage
 - [ ] More google closure library - goog/dom
@@ -99,3 +99,58 @@ Eventually, I realized that I would like to have the `33` and the `9` be dynamic
 ```
 
 What makes this interesting is because if this was JavaScript, the go-to would likely be add defaults to the args.
+
+## Hiccup/s
+
+You may notice when I write my functions that produce HTML like `event-card` and `time-option` they are functions that return strings.  Inside of the strings is HTML.  It looks gnarly because of the escape characters (`\`) and concatenation, but when I send that to the the browser, it will render as HTML.
+
+Now while you could continue doing this, Clojure has provided a few libraries that can make writing HTML in our code a little more pleasent to work with:
+
+>  Side note:  This is tantamount to writing `JSX` or using `createElement` in React.  If you are using Reagenent, they actually use a similar DSL as Hiccup under the hood.
+
+These libraries are called [hiccup](https://github.com/weavejester/hiccup) and [hiccups](https://github.com/teropa/hiccups).  The difference between the two is that `hiccup` is meant to be used in Clojure, whereas `hiccups` is meant to be used in clojurescript.
+
+In addition to making it easier to write HTML in CLJ/S, with string we run into the following issues:
+
+* With strings it is easy to make mistakes
+* With strings it is difficult to read
+* With strings it is difficult to maintain
+
+The following is a little comparison of what it looks like before and after we implemented hiccup:
+
+```clojure
+(defn event-card
+  "Wrap an event in an event HTML component - returns a string"
+  [event]
+  (str "<div class=\"root-event\">"
+         "<p class=\"event-title\">" (event :name) "</p>"
+         "<p class=\"event-time\">" (format-time (event :start-time)) " - " (format-time (event :end-time)) "</label>"
+       "</div>"))
+```
+
+hiccup is going to allow you to do this:
+
+```clojure
+(defn event-card
+  "Wrap an event in an event HTML component - returns a string"
+  [event]
+  (html
+    [:div {:class "root-event"}
+     [:p  {:class "event-title"} (event :name)]
+     [:p  {:class "event-time"} (format-time (event :start-time)) " - " (format-time (event :end-time))]]))
+```
+
+and Hiccup also provides a way of writing even less code like this:
+
+```clojure
+(defn event-card
+  "Wrap an event in an event HTML component - returns a string"
+  [event]
+  (html
+    [:div.root-event
+     [:p.event-title (event :name)]
+     [:p.event-time  (format-time (event :start-time)) " - " (format-time (event :end-time))]]))
+
+```
+
+If you are interested in seeing what more non-hiccup code would look like in ClojureScript checkout [this commit](https://github.com/tkjone/clojurescript-30/commit/c0aeccad00498bb0de2d461531fe33bd91e2a6c1) in the repo - it is the commit before I converted over to Hiccups.
