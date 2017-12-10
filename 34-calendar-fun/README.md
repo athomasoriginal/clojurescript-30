@@ -156,3 +156,49 @@ The following is a little comparison of what it looks like before and after we i
 ```
 
 If you are interested in seeing what more non-hiccup code would look like in ClojureScript checkout [this commit](https://github.com/tkjone/clojurescript-30/commit/c0aeccad00498bb0de2d461531fe33bd91e2a6c1) in the repo - it is the commit before I converted over to Hiccups.
+
+## Vector Destructuring
+
+We excercise one scenario for destructuring, but lets look at others.  For the purpose of this explaination, we will use the following data structure:
+
+**Sample Data Structure**
+
+```clojure
+(def got-characters '("Bron" "Sansa" "Jamie"))
+```
+
+**Positional**
+
+Bind each var to an item in the list
+
+```clojure
+(let [[first second third] got-characters])
+
+;;=> first = "Bron"
+;;=> second = "Sansa"
+;;=> third = "Jamie"
+```
+
+**Positional and All**
+
+Take the first and assign the entire sequence to `all`
+
+```clojure
+(let [[first :as all] got-characters])
+
+;;=> first = "Bron"
+;;=> second = ("Bron" "Sansa" "Jamie")
+```
+
+**Positional and Rest**
+
+Bind the first var to the first item in the list and then bind the entire list, except for the one we bound, to `others`
+
+```clojure
+(let [[first & others] got-characters])
+
+;;=> first = "Bron"
+;;=> second = ("Sansa" "Jamie")
+```
+
+## Map Destructuring
