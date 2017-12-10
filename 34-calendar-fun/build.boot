@@ -4,6 +4,7 @@
 
   :dependencies '[[org.clojure/clojure         "1.8.0"]
                   [org.clojure/clojurescript   "1.9.854"]
+                  [hiccups                     "0.3.0"]
                   [org.clojure/tools.nrepl     "0.2.12"         :scope "test"]
                   [proto-repl                  "0.3.1"          :scope "test"]
                   [proto-repl-charts           "0.3.2"          :scope "test"]
