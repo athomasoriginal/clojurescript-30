@@ -7,7 +7,7 @@
   https://clojure.org/guides/destructuring#_keyword_arguments"
   [& {:keys [name start-time end-time]}]
   {
-    :id         36743 ;; TODO make me a random uuid
+    :id         (random-uuid)
     :name       name
     :start-time start-time
     :end-time   end-time})
