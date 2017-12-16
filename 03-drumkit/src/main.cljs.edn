@@ -1,0 +1,4 @@
+{:require  [drumkit.core]
+ :init-fns []
+ :compiler-options {:output-dir "js/"
+                    :output-to "js/main.js"}}
