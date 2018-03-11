@@ -10,10 +10,7 @@
    ISeqable
    (-seq [node-list] (array-seq node-list)))
 
-;; enable cljs to print to the JS console of the browser
-(enable-console-print!)
-
-;; print to the console
+;; example of printing to the console
 (println "welcome to drumkit")
 
 (defn handle-key-press [e]
