@@ -5,12 +5,7 @@
 
 (def el-keys (.querySelectorAll js/document ".key"))
 
-;; protocol
-(extend-type js/NodeList
-   ISeqable
-   (-seq [node-list] (array-seq node-list)))
-
-;; example of printing to the console
+;; example of print to the console
 (println "welcome to drumkit")
 
 (defn handle-key-press [e]
@@ -31,5 +26,5 @@
 
 (.addEventListener js/window "keydown" handle-key-press)
 
-(doseq [el-key el-keys]
+(doseq [el-key (array-seq el-keys)]
   (.addEventListener el-key "transitionend" handle-remove-transition))
