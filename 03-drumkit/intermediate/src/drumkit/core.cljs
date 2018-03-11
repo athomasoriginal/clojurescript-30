@@ -3,10 +3,8 @@
   (:require        [goog.string :as gstr] goog.string.format)
   (:require-macros [drumkit.macros :refer [p pp]]))
 
-(def el-keys (.querySelectorAll js/document ".key"))
 
-;; example of print to the console
-(println "welcome to drumkit")
+;; Event Handlers
 
 (defn handle-key-press [e]
   (let [key-code      (.-keyCode e)
@@ -24,7 +22,11 @@
     (when (= (.-propertyName e) "transform")
       (.remove (.-classList this)  "playing"))))
 
-(.addEventListener js/window "keydown" handle-key-press)
 
-(doseq [el-key (array-seq el-keys)]
-  (.addEventListener el-key "transitionend" handle-remove-transition))
+;; Init
+
+(let [el-keys (.querySelectorAll js/document ".key")]
+  (doseq [el-key (array-seq el-keys)]
+    (.addEventListener el-key "transitionend" handle-remove-transition)))
+
+(.addEventListener js/window "keydown" handle-key-press)
