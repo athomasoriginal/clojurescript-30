@@ -5,10 +5,10 @@
 
 ;; Event Handlers
 
-(defn handle-key-press [e]
+(defn play-sound [e]
   (let [key-code      (.-keyCode e)
         data-selector (str "audio[data-key=" "\"" key-code "\"" "]")
-        key-selector  (str ".key[data-key=" "\"" key-code "\"" "]" )
+        key-selector  (str ".key[data-key=" "\"" key-code "\"" "]")
         audio-element (.querySelector js/document data-selector)
         key-element   (.querySelector js/document key-selector)]
     (when-not (.isNull js/goog audio-element)
@@ -17,7 +17,7 @@
         (.classList/add key-element "playing"))))
 
 
-(defn handle-remove-transition [e]
+(defn remove-transition [e]
   (this-as this
     (when (= (.-propertyName e) "transform")
       (.remove (.-classList this)  "playing"))))
@@ -27,6 +27,6 @@
 
 (let [el-keys (.querySelectorAll js/document ".key")]
   (doseq [el-key (array-seq el-keys)]
-    (.addEventListener el-key "transitionend" handle-remove-transition)))
+    (.addEventListener el-key "transitionend" remove-transition)))
 
-(.addEventListener js/window "keydown" handle-key-press)
+(.addEventListener js/window "keydown" play-sound)
