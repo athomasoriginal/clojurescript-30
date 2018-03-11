@@ -9,7 +9,7 @@
                   [proto-repl-charts         "0.3.2"]
                   [adzerk/boot-cljs          "2.1.1"]
                   [pandeiro/boot-http        "0.8.3"]
-                  [adzerk/boot-reload        "0.5.1"]
+                  [adzerk/boot-reload        "0.5.2"]
                   [adzerk/boot-cljs-repl     "0.3.3"]
                   [com.cemerick/piggieback   "0.2.1"]
                   [weasel                    "0.7.0"]])
