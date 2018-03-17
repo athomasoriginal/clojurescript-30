@@ -4,12 +4,7 @@
 
 ;; globals
 
-(def second 1000)
-
-(def minute 60000)
-
-(def hour 3600000)
-
+(def duration {:sec 1000 :min 60000 :hour 3600000 })
 
 ;; Event handlers
 
@@ -39,6 +34,6 @@
 
 ;; start
 
-(js/setInterval #(set-seconds-hand) second)
-(js/setInterval #(set-minute-hand) minute)
-(js/setInterval #(set-hour-hand) hour)
+(js/setInterval #(set-seconds-hand) (:second duration))
+(js/setInterval #(set-minute-hand) (:minute duration))
+(js/setInterval #(set-hour-hand) (:hour duration))
