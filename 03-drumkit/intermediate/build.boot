@@ -2,7 +2,7 @@
   :source-paths #{"src"}
   :resource-paths #{"resources"}
 
-  :dependencies '[[org.clojure/clojure       "1.8.0"]
+  :dependencies '[[org.clojure/clojure       "1.9.0"]
                   [org.clojure/clojurescript "1.10.145"]
                   [org.clojure/tools.nrepl   "0.2.12"]
                   [proto-repl                "0.3.1"]
