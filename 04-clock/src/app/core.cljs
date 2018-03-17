@@ -1,6 +1,5 @@
 ;; create main project namespace
 (ns app.core
-  (:require        [goog.string :as gstr] goog.string.format)
   (:require-macros [app.macros :refer [p pp]]))
 
 ;; globals
