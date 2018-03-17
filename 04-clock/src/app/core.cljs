@@ -24,7 +24,7 @@
   (let [now (js/Date.)
         seconds (.getSeconds now)
         secondsAsDegrees (+ (* (/ seconds 60) 360) 90)
-        transformVal (gstr/format "rotate(%sdeg)" secondsAsDegrees)]
+        transformVal (str "rotate(" secondsAsDegrees "deg)" )]
     (set! (.-transform (.-style second-hand)) transformVal)))
 
 
@@ -32,7 +32,7 @@
   (let [now (js/Date.)
         minutes (.getMinutes now)
         minutesAsDegrees (+ (* (/ minutes 60) 360) 90)
-        transformVal (gstr/format "rotate(%sdeg)" minutesAsDegrees)]
+        transformVal (str "rotate(" minutesAsDegrees "deg)" )]
     (set! (.-transform (.-style minute-hand)) transformVal)))
 
 
@@ -40,7 +40,7 @@
   (let [now (js/Date.)
         hours (.getHours now)
         hoursAsDegrees (+ (* (/ hours 12) 360) 90)
-        transformVal (gstr/format "rotate(%sdeg)" hoursAsDegrees)]
+        transformVal (str "rotate(" hoursAsDegrees "deg)" )]
     (set! (.-transform (.-style hour-hand)) transformVal)))
 
 
