@@ -1,7 +1,5 @@
 # 04-Clock
 
----
-
 * [Housekeeping](#housekeepings)
 * [Lessons Learned](#lessons-learned)
   * [How to do things clojure](#how-to-do-things-in-clojure)
@@ -24,7 +22,7 @@ Before trying out this repo please ensure you have a cljs environment setup. See
 
 ## How to do things clojure
 
-The big question becomes, where do I go to look for thing clojure/clojurescript related. If it is **syntax related** related remember that clojure and clojurescript share 95% of their syntax. So feel free to look into clojure docs if you cannot find something by searcing for clojurescript.
+The big question becomes, where do I go to look for thing clojure/clojurescript related. If it is **syntax related** related remember that clojure and clojurescript share 95% of their syntax. So feel free to look into clojure docs if you cannot find something by searcing for clojurescript. Why note this? Because if you change a file name, its export in JS, you do not need to reboot your tooling. This is assuming you have everything setup correctly.
 
 ## Namespaces
 
@@ -91,7 +89,7 @@ The [dispatch macro](https://clojure.org/reference/reader) is being used for the
 This is also an anonymous function:
 
 ```clojure
-`(fn [args] (…​))`
+(fn [args] (…​))
 ```
 
 **So when would you use one over another?**
