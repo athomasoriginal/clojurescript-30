@@ -51,7 +51,10 @@
     :else              (.getHours now)))
 
 
-(defn set-hand! 
+(defn set-hand!
+  "Sets the clock hand the the correct degree.
+  
+  time-unit - type: key Choice of :sec | :min | :hour"
   [time-unit]
   (let [now           (js/Date.)
         time          (get-time now time-unit)
