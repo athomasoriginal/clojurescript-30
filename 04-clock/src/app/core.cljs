@@ -67,9 +67,7 @@
 
 
 (defn set-hand!
-  "Sets the clock hand the the correct degree.
-  
-  time-unit - type: key Choice of :sec | :min | :hour"
+  "Sets the clock hand the the correct degree."
   [time-unit]
   (let [now           (js/Date.)
         time          (get-time now time-unit)

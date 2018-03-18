@@ -13,6 +13,8 @@
     * [Dispatch Macro](#dispatch-macro)
   * [Gotchas](#gotchas)
 * [Resources](#resources)
+* [Steps to Refactor](#steps-to-refactor)
+* [TODO](todo)
 
 # Housekeeping
 
@@ -121,3 +123,42 @@ Issue this helped me with was clearing up how exactly to call a function. For ex
 
 (set-date)
 ```
+
+# Steps to Refactor
+
+These are some of the steps I took when refactoring. I thought it might be interesting to see how the approach could evolve for new developers. The final effort involves me adding spec. One of my favorite things about spec is that when you `s/fdef` a function, the arg types are automatically added to the original function docs, so if you are looking through the docs, you will see the spec defs you provided. I was hesitant to add spec because it is a layer ontop of everything, but this is also why I am recording which points of the repo might be interesting. This feels like the final evolution.
+
+* [Original Effort](https://github.com/tkjone/clojurescript-30/commit/d8b394f35c2caa486369cf0aa1e35c26d669eac4)
+
+* [Remove Duplicated Efforts](https://github.com/tkjone/clojurescript-30/commit/de985ac48d752ec8b53bae6f232c0e31bc610045)
+
+* [Refactor All to One Func](https://github.com/tkjone/clojurescript-30/commit/7609058eff1b878f3a40c4aee5ac4af1b24b61dc)
+
+* [Add spec](https://github.com/tkjone/clojurescript-30/commit/c99f970f994cecf1949bfdf677d0118dacdc5011)
+
+# TODO
+
+* [ ] Explore [removing global selectors](https://github.com/tkjone/clojurescript-30/commit/258fe316c67f148838968be27a5f34714811d3eb) why this as a preference - think Elements of Clojure
+
+* [ ] Explore [removing every as a naming convention](https://github.com/tkjone/clojurescript-30/commit/a729df45af03eae673af46fbf03cd8304102e8cd) why this as a preference - think Elements of Clojure. The challenge here is that there is already a `second` function and a `min` function in the core. So we have to consider this when naming and they are exceptionally useful functions.
+
+* [ ] Explore `(def duration {:second 1000 :minute (* (:second duration) 60)})` - the reason this cannot be done is because maps are eager by default. You could import a `lazy-map` like this `(require '[lazy-map.core :refer [lazy-map]])` and then
+
+```clojure
+(def duration (lazy-map {:second 1000 :minute (*  (:second duration) 60)}))
+
+(:second duration) => 1000
+
+(:minute duration) => 60000
+```
+
+But without doing the above, you could just do something like this:
+
+```clojure
+(def duration
+  (let [second 1000
+        minute (* second 60)]
+  {:second second :minute minute}))
+```
+
+[Clojure's lazy map](https://github.com/Malabarba/lazy-map-clojure) which is used in something like [Planck](https://github.com/mfikes/planck/blob/master/planck-cljs/src/planck/repl.cljs#L215) or Lumo to shave off millisecond for the launch time
