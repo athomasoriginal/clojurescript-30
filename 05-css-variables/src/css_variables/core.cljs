@@ -2,7 +2,7 @@
   (:require-macros [css-variables.macros :refer [p pp]]))
 
 
-(defn handle-update []
+(defn update-style []
   (this-as this
     (let [suffix          (.. this -dataset -sizing)
           name            (.. this -name)
@@ -14,7 +14,7 @@
 
 ;; Start app
 
-(let [inputs (.querySelectorAll js/document ".controls input")]
+(let [inputs (.. js/document (querySelectorAll ".controls input"))]
   (doseq [input (array-seq inputs)]
-    (.addEventListener input "change" handle-update)
-    (.addEventListener input "mousemove" handle-update))) 
+    (.. input (addEventListener "change" update-style))
+    (.. input (addEventListener "mousemove" update-style))))
