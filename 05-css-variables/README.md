@@ -60,7 +60,7 @@ It was at this point where I realized the `..` macro might be a solid all around
 (let [key-code (.-keyCode e)
 ```
 
-`Option 1` reads a little more easily, we very clearly understand that it is JS interop, it becomes easier to write as the form becomes more verbose and when we are comparing it to native JS it will be easier to compare.
+`Option 1` reads a little more easily, we very clearly understand that it is JS interop, it becomes easier to write as the form becomes more verbose and when comparing / reference to js it feels a little more natural.
 
 **setProperty**
 
