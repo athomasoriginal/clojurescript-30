@@ -134,7 +134,7 @@ These are some of the steps I took when refactoring. I thought it might be inter
 
 * [Refactor All to One Func](https://github.com/tkjone/clojurescript-30/commit/7609058eff1b878f3a40c4aee5ac4af1b24b61dc)
 
-* [Add spec](https://github.com/tkjone/clojurescript-30/commit/c99f970f994cecf1949bfdf677d0118dacdc5011)
+* [Add spec](https://github.com/tkjone/clojurescript-30/blob/master/04-clock/src/app/core.cljs)
 
 # TODO
 
@@ -162,3 +162,5 @@ But without doing the above, you could just do something like this:
 ```
 
 [Clojure's lazy map](https://github.com/Malabarba/lazy-map-clojure) which is used in something like [Planck](https://github.com/mfikes/planck/blob/master/planck-cljs/src/planck/repl.cljs#L215) or Lumo to shave off millisecond for the launch time
+
+* [ ] Explore working with specs. This project could be a good way to show how we can use them.

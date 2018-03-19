@@ -4,6 +4,7 @@
 * [Lessons Learned](#lessons-learned)
   * [doseq](#doseq)
   * [js interop](#js-interop)
+    * [setProperty](#setproperty)
 
 ## Housekeeping
 
@@ -33,4 +34,10 @@ I would go with option two. No need to run a second `for` after the first one.
 
 ### js interop
 
-how to set 2+ arguments to a js/interop function like setProperty
+**setProperty**
+
+What does it look like to work with `setProperty`?
+
+```clojure
+(.. js/document -documentElement -style (setProperty formatted-name formatted-value)
+```
