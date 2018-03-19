@@ -1,6 +1,7 @@
 # 04-Clock
 
 * [Housekeeping](#housekeepings)
+* [Quickstart](#quickstart)
 * [Lessons Learned](#lessons-learned)
   * [How to do things clojure](#how-to-do-things-in-clojure)
   * [Namespace](#namespaces)
@@ -19,6 +20,16 @@
 # Housekeeping
 
 Before trying out this repo please ensure you have a cljs environment setup. See the [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started)
+
+## Quickstart
+
+Run the following comamnds from the root of the `04-clock` repo
+
+**1. Build and watch the project**
+
+```bash
+boot dev
+```
 
 # Lessons Learned
 
