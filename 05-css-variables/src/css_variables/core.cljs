@@ -11,6 +11,7 @@
           formatted-value (str val suffix)]
       (.. js/document -documentElement -style (setProperty formatted-name formatted-value)))))
 
+
 ;; Start app
 
 (let [inputs (.querySelectorAll js/document ".controls input")]

@@ -5,6 +5,7 @@
 * [Lessons Learned](#lessons-learned)
   * [doseq](#doseq)
   * [js interop](#js-interop)
+    * [Double Dot](#double-dot)
     * [setProperty](#setproperty)
 
 ## Housekeeping
@@ -44,6 +45,22 @@ At the time, the question I had was which one of the following is preferable:
 I would go with option two. No need to run a second `for` after the first one.
 
 ### js interop
+
+**Double Dot**
+
+It was at this point where I realized the `..` macro might be a solid all around default when working with JS Interop. If we compare this app to some of the other ones I did previously, we can see the benefits:
+
+```clojure
+;; option 1
+ (let [suffix (.. this -dataset -sizing)
+       name   (.. this -name)
+       val    (.. this -value)
+
+;; option 2
+(let [key-code (.-keyCode e)
+```
+
+`Option 1` reads a little more easily, we very clearly understand that it is JS interop, it becomes easier to write as the form becomes more verbose and when we are comparing it to native JS it will be easier to compare.
 
 **setProperty**
 
