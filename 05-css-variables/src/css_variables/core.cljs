@@ -2,13 +2,6 @@
   (:require        [goog.string :as gstr] goog.string.format)
   (:require-macros [css-variables.macros :refer [p pp]]))
 
-;; protocol
-(extend-type js/NodeList
-   ISeqable
-   (-seq [node-list] (array-seq node-list)))
-
-;; global definitions
-(def inputs (.querySelectorAll js/document ".controls input"))
 
 (defn handle-update []
   (this-as this
@@ -19,8 +12,9 @@
           formatted-value (gstr/format "%s%s" val suffix)]
       (.. js/document -documentElement -style (setProperty formatted-name formatted-value)))))
 
+;; Start app
 
-;; print to the console
-(doseq [input inputs]
-  (.addEventListener input "change" handle-update)
-  (.addEventListener input "mousemove" handle-update))
+(let [inputs (.querySelectorAll js/document ".controls input")]
+  (doseq [input (array-seq inputs)]
+    (.addEventListener input "change" handle-update)
+    (.addEventListener input "mousemove" handle-update))) 
