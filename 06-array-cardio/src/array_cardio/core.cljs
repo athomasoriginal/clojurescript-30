@@ -108,15 +108,5 @@
 
 (def tranformed-ds-ten (clj->js (reduce #(assoc %1 %2 (inc (%1 %2 0))) {} js/data)))
 
-
 (p tranformed-ds-nine)
 (p tranformed-ds-ten)
-
-;; after performing these excercises, it because immediatley clear of some of the difference when trying
-;; to functional with js and clojurescript.  js can do it, and I believe it does it well, but once you do
-;; it with clojure, it feels awkward and like you are trying to make it work by being clever.  This I believe
-;; is a combination of the design of the language and clojures out of the box support for functional programming.
-;; also, everything in clojure is data.  so working with data is super easy.  It just feels smoother.
-;; for example, when doing the above, the way I would normally do this is create an object and then increment
-;; things in it.  but we has assoc and inc which makes this so much cleaner and thinking about it is less
-;; imperative.
