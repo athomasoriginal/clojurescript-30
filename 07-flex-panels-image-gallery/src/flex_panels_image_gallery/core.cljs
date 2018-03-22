@@ -1,6 +1,5 @@
 ;; create main project namespace
 (ns flex-panels-image-gallery.core
-  (:require        [goog.string :as gstr] goog.string.format)
   (:require-macros [flex-panels-image-gallery.macros :refer [p pp]]))
 
 (def panels (.. js/document (querySelectorAll ".panel")))
