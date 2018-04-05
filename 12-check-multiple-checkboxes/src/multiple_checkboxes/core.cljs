@@ -1,6 +1,5 @@
 ;; create main project namespace
 (ns multiple-checkboxes.core
-  (:require        [goog.string :as gstr] goog.string.format)
   (:require-macros [multiple-checkboxes.macros :refer [p pp]]))
 
 
