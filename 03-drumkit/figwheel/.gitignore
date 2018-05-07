@@ -8,3 +8,6 @@ pom.xml.asc
 /.lein-*
 /.nrepl-port
 /.nrepl-history
+
+# figwheel
+/.cpcache
