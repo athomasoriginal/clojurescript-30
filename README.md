@@ -77,7 +77,8 @@ Each repo represents a stand alone project and will contain its own README where
 * [20-string-times](https://github.com/tkjone/clojurescript-30/tree/master/20-string-times)
 * [21-unreal-webcam-fun](https://github.com/tkjone/clojurescript-30/tree/master/21-unreal-webcam-fun)
 * [25-speech-synthesis](https://github.com/tkjone/clojurescript-30/tree/master/25-speech-synthesis)
-* [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/25-sticky-nav)
+* [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/26-sticky-nav)
+* [27-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/27-event-delegation)
 * [34-calendar-fun](https://github.com/tkjone/clojurescript-30/tree/master/34-calendar-fun)
 
 # Learning Themes
