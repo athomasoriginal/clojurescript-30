@@ -2,7 +2,7 @@
 
 ## Quickstart
 
-Run the following commands from the root of the `26-event-delegation` repo
+Run the following commands from the root of the `27-event-delegation` repo
 
 * **1. Build and watch the project**
 
