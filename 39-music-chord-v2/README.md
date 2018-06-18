@@ -2,8 +2,6 @@
 
 Chord diagrams.
 
-Design Inspiration: https://dribbble.com/shots/591930-ColourChord & https://www.uberchord.com/
-
 - [Quick Start](#quick-start)
 - [TODO](#todo)
 - [Research](#research)
@@ -25,6 +23,12 @@ clojure -m figwheel.main -b dev -r
 # or
 
 clj --main cljs.main --repl-opts ro.edn --watch src --compile app.core --repl # not working yet
+```
+
+and you can also see some live docs like this:
+
+```bash
+clj -m dynadoc.core
 ```
 
 ## TODO
@@ -79,6 +83,10 @@ Chord diagrams show you where to put your fingers on a guitar
 - finger bar (continous black line) `bar`
 
 ## Documentation
+
+### Dynadocs
+
+...
 
 ### Representing a Chord as Data
 
