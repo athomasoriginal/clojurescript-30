@@ -96,7 +96,7 @@ When describing to someone how to play a chord we need to tell them:
 2.  The fret to play
 3.  The finger to use (optional)
 
-To communicate the above more efficiently, we have things like chord diagrams and chord notation. Chord notation looks like this `x32010`. I have also see this written to include finger positions like so: `x3(3)2(2)01(1)0`. However, I have not seen these used to represent bar chords, so not sure how that is communicated.
+To communicate the above more efficiently, we have things like chord diagrams and chord notation. Chord notation looks like this `x32010`. I have also seen this written to include finger positions like so: `x3(3)2(2)01(1)0`. However, I have not seen these used to represent bar chords, so not sure how that is communicated.
 
 Different representations of chord diagrams:
 

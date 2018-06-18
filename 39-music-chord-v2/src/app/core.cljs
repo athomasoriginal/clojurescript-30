@@ -15,7 +15,7 @@
   {:em [[1 :mute] [2 3 1] [3 2 2] [4 :open] [5 1 1] [6 :open]]})
 
 
-;; Components
+;; Helpers
 ;; -----------------------------------------------------------------------------
 
 
@@ -59,6 +59,10 @@
     ""))
 
 
+;; Components
+;; -----------------------------------------------------------------------------
+
+
 (defn fret
   "Renders 1 fret and 6 strings per fret"
   [chord curr-fret]
@@ -85,8 +89,10 @@
           [:div.chord-diagram
             (frets chord (range 1 5))]]))
 
+
 ;; Live Docs
 ;; -----------------------------------------------------------------------------
+
 
 (defexample chord-box
   {:with-card card
@@ -95,8 +101,10 @@
   (reagent.core/render-component focus card)
   nil)
 
+
 ;; Start
 ;; -----------------------------------------------------------------------------
+
 
 (doto
   (.. js/document (getElementById "chord-container"))
