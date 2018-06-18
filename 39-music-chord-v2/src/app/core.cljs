@@ -1,9 +1,11 @@
 (ns app.core
   "Demo app illustrating a music guitar chord."
-  (:require hiccups.runtime)
+  (:require [hiccups.runtime]
+            [reagent.core :as r])
   (:require-macros
-    [app.macros   :refer [p pp]]
-    [hiccups.core :refer [html]]))
+    [app.macros      :refer [p pp]]
+    [dynadoc.example :refer [defexample]]
+    [hiccups.core    :refer [html]]))
 
 ;; Globals
 ;; -----------------------------------------------------------------------------
@@ -75,7 +77,6 @@
     [:div.fret
       (fret chord curr-fret)]))
 
-
 (defn chord-box
   "Render a chord diagram of 4 frets and 6 strings"
   [title chord]
@@ -84,6 +85,15 @@
           [:div.chord-diagram
             (frets chord (range 1 5))]]))
 
+;; Live Docs
+;; -----------------------------------------------------------------------------
+
+(defexample chord-box
+  {:with-card card
+   :with-focus [focus [chord-box "CM" (:em chord-boxes)]]}
+  (reagent.core/unmount-component-at-node card)
+  (reagent.core/render-component focus card)
+  nil)
 
 ;; Start
 ;; -----------------------------------------------------------------------------

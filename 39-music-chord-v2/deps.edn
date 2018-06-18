@@ -2,5 +2,11 @@
  :deps  {org.clojure/clojure       {:mvn/version "1.9.0"}
          org.clojure/clojurescript {:mvn/version "1.10.238"}
 
+         ; app
+         hiccups                   {:mvn/version "0.3.0"}
+
+         ; dev only
          com.bhauman/figwheel-main {:mvn/version "0.1.0-SNAPSHOT"}
-         hiccups                   {:mvn/version "0.3.0"}}}
+         
+         dynadoc                   {:mvn/version "RELEASE"}
+         reagent                   {:mvn/version "0.8.0-alpha2"}}}
