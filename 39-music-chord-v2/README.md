@@ -86,7 +86,19 @@ Chord diagrams show you where to put your fingers on a guitar
 
 ### Dynadocs
 
-...
+Design Inspiration: https://dribbble.com/shots/591930-ColourChord & https://www.uberchord.com/
+
+Comes with reagent built in...
+
+Very slow when clicking around + default state of showing everything is kind of odd...easier starter settings would be good
+
+Default style make it difficult to read - not a big deal in the beginning
+
+Extract the server to allow people to do things with it as they see fit
+
+Not enough documentation
+
+Setting up the main system via cljs is a little harder then expected
 
 ### Representing a Chord as Data
 
