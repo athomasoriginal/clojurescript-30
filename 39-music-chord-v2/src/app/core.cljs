@@ -84,10 +84,10 @@
 (defn chord-box
   "Render a chord diagram of 4 frets and 6 strings"
   [title chord]
-  (html [:div.chord-diagram-wrapper
-          [:h1 title]
-          [:div.chord-diagram
-            (frets chord (range 1 5))]]))
+  [:div.chord-diagram-wrapper
+   [:h1 title]
+   [:div.chord-diagram
+    (frets chord (range 1 5))]])
 
 
 ;; Live Docs
@@ -105,7 +105,7 @@
 ;; Start
 ;; -----------------------------------------------------------------------------
 
-
+#_
 (doto
   (.. js/document (getElementById "chord-container"))
   (-> .-innerHTML (set! (chord-box "C Major" (:em chord-boxes)))))
