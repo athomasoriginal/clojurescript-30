@@ -80,6 +80,7 @@ Each repo represents a stand alone project and will contain its own README where
 - [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/26-sticky-nav)
 - [27-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/27-event-delegation)
 - [28-stripe-follow-along-dropdown](https://github.com/tkjone/clojurescript-30/tree/master/28-stripe-follow-along-dropdown)
+- [30-video-speed-controller-ui](https://github.com/tkjone/clojurescript-30/tree/master/30-video-speed-controller-ui)
 - [34-calendar-fun](https://github.com/tkjone/clojurescript-30/tree/master/34-calendar-fun)
 
 # Learning Themes
