@@ -4,10 +4,10 @@ This repo contains my answers to Wes Bos's [JavaScript 30](https://javascript30.
 
 My goal when I set out to do this was just to learn CLJ and functional programming. After working through a few examples, I was actually suprised that some things which I anticipated would be easy, were actually difficult to execute. I remember hitting my head against the wall trying to figure out why the simplest piece of code would not run. In this spirit, my hope is that people find this repo a helpful learning tool. My recommended approach to using this repo:
 
-* Start with the [Getting Started](getting-started) guide below
-* Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
-* Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there. When you get stuck, feel free to come over here for details on how I did it.
-* If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here. This might help us gain insight into how we can better help new developers to join the Clojure community.
+- Start with the [Getting Started](getting-started) guide below
+- Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
+- Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there. When you get stuck, feel free to come over here for details on how I did it.
+- If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here. This might help us gain insight into how we can better help new developers to join the Clojure community.
 
 Aside from the above, use this a reference to see how you can write CLJS. Please keep in mind that my code is not the best, but I will work to improve this repo as I keep honing my clojure craft.
 
@@ -15,14 +15,14 @@ I also want to throw the video [ClojureScript for Skeptics](https://www.youtube.
 
 # Table of Contents
 
-* [Getting Started](#getting-started)
-  * [Install Java](#install-java)
-  * [Install Boot](#install-boot)
-  * [Editor Setup](#editor-setup)
-* [Content Overview](#content-overview)
-* [Learning Themes](#learning-themes)
-* [Background](#background)
-* [Special Thanks](#special-thanks)
+- [Getting Started](#getting-started)
+  - [Install Java](#install-java)
+  - [Install Boot](#install-boot)
+  - [Editor Setup](#editor-setup)
+- [Content Overview](#content-overview)
+- [Learning Themes](#learning-themes)
+- [Background](#background)
+- [Special Thanks](#special-thanks)
 
 # Getting Started
 
@@ -44,42 +44,43 @@ The most common suggestions for editors I have seen for `clj/cljs` are [Emacs](h
 
 With this in mind, here are packages that I have added to my Atom setup to help working with Clojure an even more enjoyable experience:
 
-* [language-clojure](https://atom.io/packages/language-clojure)
-* [proto-repl](https://atom.io/packages/proto-repl)
-* [proto-repl-charts](https://atom.io/packages/proto-repl-charts)
-* [ink](https://atom.io/packages/ink)
-* [parinfer](https://atom.io/packages/parinfer)
+- [language-clojure](https://atom.io/packages/language-clojure)
+- [proto-repl](https://atom.io/packages/proto-repl)
+- [proto-repl-charts](https://atom.io/packages/proto-repl-charts)
+- [ink](https://atom.io/packages/ink)
+- [parinfer](https://atom.io/packages/parinfer)
 
 # Content Overview
 
 Each repo represents a stand alone project and will contain its own README where you can go to learn more about each one. The first 3 projects are not JavaScript 30 excercises, but [Modern CLJS](https://github.com/magomimmo/modern-cljs). I recommend starting with the first 3 tutorials. The rest is [JavaScript 30](https://javascript30.com/).
 
-* [00-setup](https://github.com/tkjone/clojurescript-30/tree/master/00-setup)
-* [01-setup-reload](https://github.com/tkjone/clojurescript-30/tree/master/01-setup-reload)
-* [02-setup-reload-cleaner](https://github.com/tkjone/clojurescript-30/tree/master/02-setup-reload-custom)
-* 03-drumkit
-* 04-clock
-* 05-css-variables
-* 06-array-cardio
-* 07-flex-panels-image-gallery
-* 08-ajax-type-ahead
-* 09-array-cardio-2
-* 10-html5-canvas
-* 11-dev-tool-tricks
-* [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-check-multiple-checkboxes)
-* 13-html5-video-player
-* [14-key-sequence-detection](https://github.com/tkjone/clojurescript-30/tree/master/14-key-sequence-detection)
-* [15-slide-in-on-scroll](https://github.com/tkjone/clojurescript-30/tree/master/15-slide-in-on-scroll)
-* [16-object-and-arrays](https://github.com/tkjone/clojurescript-30/tree/master/16-object-and-arrays)
-* [17-localstorage-and-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/17-localstorage-and-event-delegation)
-* [18-mousemove-text-shadows](https://github.com/tkjone/clojurescript-30/tree/master/18-mousemove-text-shadows)
-* [19-sort-without-articles](https://github.com/tkjone/clojurescript-30/tree/master/19-sort-without-articles)
-* [20-string-times](https://github.com/tkjone/clojurescript-30/tree/master/20-string-times)
-* [21-unreal-webcam-fun](https://github.com/tkjone/clojurescript-30/tree/master/21-unreal-webcam-fun)
-* [25-speech-synthesis](https://github.com/tkjone/clojurescript-30/tree/master/25-speech-synthesis)
-* [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/26-sticky-nav)
-* [27-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/27-event-delegation)
-* [34-calendar-fun](https://github.com/tkjone/clojurescript-30/tree/master/34-calendar-fun)
+- [00-setup](https://github.com/tkjone/clojurescript-30/tree/master/00-setup)
+- [01-setup-reload](https://github.com/tkjone/clojurescript-30/tree/master/01-setup-reload)
+- [02-setup-reload-cleaner](https://github.com/tkjone/clojurescript-30/tree/master/02-setup-reload-custom)
+- 03-drumkit
+- 04-clock
+- 05-css-variables
+- 06-array-cardio
+- 07-flex-panels-image-gallery
+- 08-ajax-type-ahead
+- 09-array-cardio-2
+- 10-html5-canvas
+- 11-dev-tool-tricks
+- [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-check-multiple-checkboxes)
+- 13-html5-video-player
+- [14-key-sequence-detection](https://github.com/tkjone/clojurescript-30/tree/master/14-key-sequence-detection)
+- [15-slide-in-on-scroll](https://github.com/tkjone/clojurescript-30/tree/master/15-slide-in-on-scroll)
+- [16-object-and-arrays](https://github.com/tkjone/clojurescript-30/tree/master/16-object-and-arrays)
+- [17-localstorage-and-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/17-localstorage-and-event-delegation)
+- [18-mousemove-text-shadows](https://github.com/tkjone/clojurescript-30/tree/master/18-mousemove-text-shadows)
+- [19-sort-without-articles](https://github.com/tkjone/clojurescript-30/tree/master/19-sort-without-articles)
+- [20-string-times](https://github.com/tkjone/clojurescript-30/tree/master/20-string-times)
+- [21-unreal-webcam-fun](https://github.com/tkjone/clojurescript-30/tree/master/21-unreal-webcam-fun)
+- [25-speech-synthesis](https://github.com/tkjone/clojurescript-30/tree/master/25-speech-synthesis)
+- [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/26-sticky-nav)
+- [27-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/27-event-delegation)
+- [28-stripe-follow-along-dropdown](https://github.com/tkjone/clojurescript-30/tree/master/28-stripe-follow-along-dropdown)
+- [34-calendar-fun](https://github.com/tkjone/clojurescript-30/tree/master/34-calendar-fun)
 
 # Learning Themes
 
@@ -101,10 +102,10 @@ If you are new to programming, do not let the above paragraph discourage you. Wh
 
 I want to thank [wes bos](https://github.com/wesbos) for providing an amazing course that I believe could be used to help developers learn not just JavaScript, but any language that compiles to JS. For example:
 
-* Elm
-* ClojureScript
-* Dart
-* ElixirScript
+- Elm
+- ClojureScript
+- Dart
+- ElixirScript
 
 and the above list goes on, but the ones I mentioned are the ones that are more interesting to me and likely more well known.
 
