@@ -29,10 +29,11 @@
           (when (-> this .-classList (.contains "trigger-enter"))
             (-> this .-classList (.add "trigger-enter-active")), 150)))
 
-      (-> background .-classList (.add "open"))
-      (-> background .-style (.setProperty "width" (str (:width coords) "px")))
-      (-> background .-style (.setProperty "height" (str (:height coords) "px")))
-      (-> background .-style (.setProperty "transform" (str "translate(" (:left coords) "px, " (:top coords) "px" ")"))))))
+      (doto background
+            .-classList (.add "open")
+            .-style (.setProperty "width" (str (:width coords) "px"))
+            .-style (.setProperty "height" (str (:height coords) "px"))
+            .-style (.setProperty "transform" (str "translate(" (:left coords) "px, " (:top coords) "px" ")"))))))
 
 
 (defn handle-leave
