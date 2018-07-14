@@ -82,6 +82,7 @@ Each repo represents a stand alone project and will contain its own README where
 - [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/26-sticky-nav)
 - [27-event-delegation](https://github.com/tkjone/clojurescript-30/tree/master/27-event-delegation)
 - [28-stripe-follow-along-dropdown](https://github.com/tkjone/clojurescript-30/tree/master/28-stripe-follow-along-dropdown)
+- [29-click-and-drag-to-scroll](https://github.com/tkjone/clojurescript-30/tree/master/29-click-and-drag-to-scroll)
 - [30-video-speed-controller-ui](https://github.com/tkjone/clojurescript-30/tree/master/30-video-speed-controller-ui)
 - [31-countdown-clock](https://github.com/tkjone/clojurescript-30/tree/master/31-countdown-clock)
 - [32-whack-a-mole-game](https://github.com/tkjone/clojurescript-30/tree/master/32-whack-a-mole-game)
