@@ -2,67 +2,40 @@
 
 ---
 
-* [Housekeeping](#housekeepings)
-* [Lessons Learned](#lessons-learned)
-  * [Overview](#Overview)
-  * [Variables](#variables)
-  * [Protocols](#protocols)
-  * [Pro Tips](#pro-tips)
-* [Resources](#resources)
+- [Intro](#intro)
+- [Housekeeping](#housekeepings)
+- [Lessons Learned](#lessons-learned)
+  - [Overview](#Overview)
+  - [Variables](#variables)
+  - [Protocols](#protocols)
+  - [Pro Tips](#pro-tips)
+- [Resources](#resources)
 
-# Basic Vs. Intermediate
+# Intro
 
-I split the two up and the **only** difference between the two repos is the tooling. I wanted to illustrate what a project using only the new CLI API could look and function like. This is a simpler workflow for new developers to CLJS.
+When I originally worked on these, I immediately used boot + boot-reload and the like. However, these tools do have a steep learning curve. I decided to go back and remove some of the tooling. This was made possible by CLJS 1.10 where we now have a much easier time starting these applications from the terminal. All of this to say, you will notice that this repo has three sub directories which all contain the same code in their `src` files: `boot`, `deps-cli` and `deps-cli-figwheel`. The only difference between each of these is the tooling used. For people from JavaScript, think of it as the difference between `npm scripts` or `gulp`.
 
-# Education Decisions
+When I started this project, your options were `boot` and `leiningen`. There is now a third option called `deps cli`. I originally opted to use `Boot`. I am now using `deps-cli` + `figwheel` everywhere. Why? I feel that for a beginner `boot` and `lein` are difficult to understand and configure. You want likely want to write Clojure and not spend time configuring tooling.
 
-When I originally worked on these, I immediatley used figwheel and the like, but give that these are meant to be a little step by step guide on some of the simplest ways to work with CLJ, I decided to go back and remove some of the tooling. This was made possible by CLJS 1.10 where we now have a much easier time starting these applications from the terminal. So, instead of immediatley diving into tooling, lets keep things as simple as possible.
+My recommendation is to use `deps-cli-figwheel`. Only use the `boot` and `deps-cli` dirs when you want to see how to configure your app with those tool. Thus, they are meant to illustrate what a project using only the new CLI API could look and function like.
 
-Assumptions:
+With this in mind, please understand the assumptions here:
+
+**Assumptions:**
 
 1.  Keep things simple when teaching a new language
 
 2.  The REPL is more confusing in the beginning then helpful. Consider, you test and rapidly develop with it, but when you write code, its in a file.
 
-3.  Don't introduce too much tooling right away. One of the reasons I liked JS30 is because it does something really well - it approaches education of JS and Web Development without tooling. Just open a file, open in the browser, your good to go. CLJS is compiled, so its not that easy, but it does not mean we have to do too much with tooling.
+3.  Don't introduce too much tooling right away. One of the reasons I liked JS30 is because it approaches education of JS and Web Development without tooling. Just create an HTML file, open it in the browser and your good to go. CLJS is compiled, so its not as simple, but with tools like `deps-cli` it has become a lot easier.
 
-I used macros.clj, but I honestly don't think that is a good idea for people learning, especially because its only saving a few lines.
+**WARNING:**
+
+`deps-cli` is a little more challenging to use on its own without figwheel during development. The errors are not as visible, the config is a little verbose and, for this particular excercise, it will not serve the `.wav` files correctly.
 
 # Housekeeping
 
 Before trying out this repo please ensure you have a cljs environment setup. See the [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started)
-
-# Quickstart Basic
-
-Run the following comamnds from the root of the `03-drumkit` repo
-
-**1. Build and watch the project**
-
-```bash
-clj --main cljs.main --repl-opts '{:static-dir ["." "out" "resources"]}' --watch src --compile drumkit.core --repl
-```
-
-For basic you have spend some time setting things up for a project.
-
-> please note that `deps.edn` is only for managing dependencies and classpath. Also note that in intermediate, the path is `<script src="out/main.js"></script>`. I also know that it seems like there are some scary parts to this command, but really we are just telling the cli that we want it to also look into specified static dirs here `{:static-dir ["." "out" "resources"]}`. The browser CLI. [Here are the options that we can pass to repl-opts](https://github.com/mfikes/clojurescript-site/blob/issue-187/content/reference/repl-options.adoc#static-dir)
-
-if we want to read about how the cljs.main tool actually works, can be found [here](https://github.com/clojure/clojurescript/blob/7a5a65cb4d1eeca63746dd21e138ee9e56676ae4/src/main/clojure/cljs/repl/browser.clj)/. We don't need to specify the output dir if I am running `--compile` - it defaults to `out` in this case.
-
-If we are wondering why `.wav` files cannot be found, its because of this section https://github.com/clojure/clojurescript/blob/master/src/main/clojure/cljs/repl/browser.clj#L31
-
-# Quickstart Intermediate
-
-Run the following comamnds from the root of the `03-drumkit` repo
-
-**1. Build and watch the project**
-
-```bash
-boot dev
-```
-
-**2. Sanity Check**
-
-The above step will compile your `cljs` code in the `src` directory and create a new directory in the root of this project called `target`. Inside of `target` you will find an `index.html` file. Open that file in a browser and you should see a blank white screen. Open the web developer console and you should see a console log of `Hello World!`.
 
 # Lessons Learned
 
@@ -79,9 +52,9 @@ Originally I thought I needed this:
 
 But really I could just do it inline. Difference is that
 
-* Easier for others to read and understand
+- Easier for others to read and understand
 
-* A little complex for such a small program
+- A little complex for such a small program
 
 I would love to delve into this a little further. See [This Commit](https://github.com/tkjone/clojurescript-30/commit/148a5744caa180c948598cf9234c4928939f7e9e) for the example of the code that was there, which I later removed
 
@@ -123,5 +96,5 @@ The above are my initial thoughts after completing this excercise. Not sure exac
 
 # Resources
 
-* https://www.andrewhfarmer.com/webpack-hmr-tutorial/
-* https://github.com/bhauman/lein-figwheel
+- https://www.andrewhfarmer.com/webpack-hmr-tutorial/
+- https://github.com/bhauman/lein-figwheel
