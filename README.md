@@ -4,9 +4,9 @@ This is Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written i
 
 The original goal was to become better at functional programming. I would learn Clojure, a functional language, and then apply these skills to JavaScript. What this repo has become is me documenting the process I used to learn ClojureScript. Each repo contains the exercises written in ClojureScript and write-ups on lessons learned.
 
-In this spirit, this repo can be used by people learn Clojure. Hopefully this will help in some way. You can use this repo as a reference of examples of vanilla ClojureScript + JS Interop, or take up the JavaScript 30 challenge yourself.
+In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
 
-If you still skeptical on why ClojureScript, there is an excellent video called [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make `cljs` a compelling language.
+If you skeptical on why ClojureScript, or what it is, there is an excellent video called [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make `cljs` a compelling language.
 
 # Table of Contents
 
