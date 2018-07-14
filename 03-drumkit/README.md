@@ -5,10 +5,10 @@
 - [Intro](#intro)
 - [Housekeeping](#housekeepings)
 - [Lessons Learned](#lessons-learned)
-  - [Overview](#Overview)
+  - [Protocols](#Protocols)
   - [defs](#defs)
-  - [Protocols](#protocols)
-  - [Pro Tips](#pro-tips)
+  - [Formatting Strings](#formatting-strings)
+- [Final Thoughts](#final-thoughts)
 - [Resources](#resources)
 
 # Intro
@@ -32,10 +32,6 @@ With this in mind, please understand the assumptions here:
 **WARNING:**
 
 `deps-cli` is a little more challenging to use on its own without figwheel during development. The errors are not as visible, the config is a little verbose and, for this particular excercise, it will not serve the `.wav` files correctly.
-
-# Housekeeping
-
-Before trying out this repo please ensure you have a cljs environment setup. See the [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started)
 
 # Lessons Learned
 
@@ -89,7 +85,7 @@ Difference between the two?
 
 Just keep in mind there are other ways to format strings, so this is not an exhaustive overview.
 
-## Overview
+## Final Thoughts
 
 > This was actually annoying as fuck. Where is the context? The resources are not well documented, there is no, here is something bsic to get you going.
 
