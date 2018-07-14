@@ -1,4 +1,0 @@
-{:require  [setup-reload-custom.core]
- :init-fns []
- :compiler-options {:output-dir "js/"
-                    :output-to "js/main.js"}}
