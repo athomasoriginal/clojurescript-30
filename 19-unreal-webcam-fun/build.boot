@@ -3,7 +3,7 @@
   :resource-paths #{"resources"}
 
   :dependencies '[[org.clojure/clojure       "1.8.0"]
-                  [org.clojure/clojurescript "1.9.854"]
+                  [org.clojure/clojurescript "1.10.339"]
                   [org.clojure/tools.nrepl   "0.2.12"]
                   [org.clojure/core.async    "0.3.443"]
                   [proto-repl                "0.3.1"]
