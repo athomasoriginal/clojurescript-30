@@ -15,7 +15,7 @@
 
 When I originally worked on these, I immediately used boot + boot-reload and the like. However, these tools do have a steep learning curve. I decided to go back and remove some of the tooling. This was made possible by CLJS 1.10 where we now have a much easier time starting these applications from the terminal. All of this to say, you will notice that this repo has three sub directories which all contain the same code in their `src` files: `boot`, `deps-cli` and `deps-cli-figwheel`. The only difference between each of these is the tooling used. For people from JavaScript, think of it as the difference between `npm scripts` or `gulp`.
 
-When I started this project, your options were `boot` and `leiningen`. There is now a third option called `deps cli`. I originally opted to use `Boot`. I am now using `deps-cli` + `figwheel` everywhere. Why? I feel that for a beginner `boot` and `lein` are difficult to understand and configure. You want likely want to write Clojure and not spend time configuring tooling.
+When I started this project, your options were `boot` and `leiningen`. There is now a third option called `deps cli`. I originally opted to use `Boot`. I am now using `deps-cli` + `figwheel` everywhere. Why? I feel that for a beginner `boot` and `lein` are difficult to understand and configure. You likely want want to write Clojure and not spend time configuring tooling.
 
 My recommendation is to use `deps-cli-figwheel`. Only use the `boot` and `deps-cli` dirs when you want to see how to configure your app with those tool. Thus, they are meant to illustrate what a project using only the new CLI API could look and function like.
 
@@ -60,11 +60,11 @@ I would love to delve into this a little further. See [This Commit](https://gith
 
 ## Naming Conventions
 
-`core.cljs` is a naming convention. This is the equivalent of `drumkit/index.js` in JS world. You could call it anything you wanted really.
+`core.cljs` is a naming convention. This is the equivalent of `drumkit/index.js` in JS world. You could call it anything you want really.
 
 ## defs
 
-what happens when a variable is assigned in global and than a parameter has the same name? Can you write them with let's instead?
+when you use `def` these become global variables in Clojure. For this reason, we usually put defs at the top. One of the reasons for this is because Clojure is read from bottom to top.
 
 ## Formatting strings
 
@@ -82,17 +82,18 @@ An alternative is like this
 data-selector (str "audio[data-key=" "\"" key-code "\"" "]")
 ```
 
-What are the differences between the different ways to format strings?
+Difference between the two?
+
+1.  The second option can be used in `clojure` and `clojurescript`
+2.  The first option can be considered more readable + easier to maintain
+
+Just keep in mind there are other ways to format strings, so this is not an exhaustive overview.
 
 ## Overview
 
 > This was actually annoying as fuck. Where is the context? The resources are not well documented, there is no, here is something bsic to get you going.
 
-The above are my initial thoughts after completing this excercise. Not sure exactly what I meant by the above as I am revisiting this over a month after initially writing it.
-
-[Initial Commit](https://github.com/tkjone/clojurescript-30/commit/34b151e6a2d0fc86fe3f6b34ee0fefaee88c5b94)
-
-## Variables
+The above is what I wrote when I finished this exercise. No idea what I was referring to at the time. Checkout the [Initial Commit](https://github.com/tkjone/clojurescript-30/commit/34b151e6a2d0fc86fe3f6b34ee0fefaee88c5b94) for more.
 
 # Resources
 
