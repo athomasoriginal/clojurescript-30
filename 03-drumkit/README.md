@@ -6,7 +6,7 @@
 - [Housekeeping](#housekeepings)
 - [Lessons Learned](#lessons-learned)
   - [Overview](#Overview)
-  - [Variables](#variables)
+  - [defs](#defs)
   - [Protocols](#protocols)
   - [Pro Tips](#pro-tips)
 - [Resources](#resources)
