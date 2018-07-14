@@ -35,11 +35,11 @@ see [clojure guide - install boot](https://tkjone.github.io/clojure-guide/v1/gui
 
 In short, use [Atom](https://atom.io/). or [VSCode](https://code.visualstudio.com/). These are lightweight editors that have strong Clojure language support.
 
-You are going to hear the more commonly suggested editors are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html). These are excellent editors. I used them when I started learning Clojure. The reason I moved away is because the tooling is complex and the editors are opinionated. If your goal is to learn Clojure, choose an editor that lets yous focus on just the language. For new developers, this is going to be something like Atom 90% of the time.
+You are going to hear the more commonly suggested editors are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html). These are excellent editors. I used them when I started learning Clojure. The reason I moved away is because the tooling is complex and the editors are opinionated. If your goal is to learn Clojure, choose an editor that lets you focus on just the language. For new developers, this is going to be something like Atom 90% of the time.
 
 > To emacs/vim people, this is not a slight against your editors. These are amazing editors and people should learn them. When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great. Remember what it is like to be new at something - its all about baby steps
 
-With this in mind, here are packages that I recommend adding to Atom to help working with Clojure an even more enjoyable experience:
+With this in mind, here are packages that I recommend adding to Atom to make working with Clojure an even more enjoyable experience:
 
 - [language-clojure](https://atom.io/packages/language-clojure)
 - [proto-repl](https://atom.io/packages/proto-repl)
@@ -84,7 +84,7 @@ Each repo represents a stand alone project and will contain its own README where
 
 # Learning Themes
 
-After re-reading and editing all my responses, here are some tips when learning Clojure:
+After re-reading and editing all my responses, here are some high level themes I was able to carve out:
 
 1.  Learn to read the Clojure docs
 
@@ -92,7 +92,7 @@ After re-reading and editing all my responses, here are some tips when learning 
 
 2.  Don't dig too deep too fast
 
-    Clojure feels more complex at times then JavaScript. Digging too deep to early leads to information overload. Take it easy.
+    Clojure feels more complex at times then JavaScript. Digging too deep too early leads to information overload. Take it easy.
 
 # Background
 
