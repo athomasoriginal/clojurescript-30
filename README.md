@@ -52,7 +52,7 @@ With this in mind, here are packages that I have added to my Atom setup to help 
 
 # Content Overview
 
-Each repo represents a stand alone project and will contain its own README where you can go to learn more about each one. The first 3 projects are not JavaScript 30 excercises, but [Modern CLJS](https://github.com/magomimmo/modern-cljs). I recommend starting with the first 3 tutorials. The rest is [JavaScript 30](https://javascript30.com/).
+Each repo represents a stand alone project and will contain its own README where you can go to learn more about each one. The first 3 projects are not JavaScript 30 exercises, but [Modern CLJS](https://github.com/magomimmo/modern-cljs). I recommend starting with the first 3 tutorials. The rest is [JavaScript 30](https://javascript30.com/).
 
 - [00-setup](https://github.com/tkjone/clojurescript-30/tree/master/00-setup)
 - [01-setup-reload](https://github.com/tkjone/clojurescript-30/tree/master/01-setup-reload)
