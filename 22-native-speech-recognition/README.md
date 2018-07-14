@@ -5,6 +5,7 @@ Customize the HTML5 Video Player with CLJS.
 - [Quickstart](#quickstart)
 - [Learnings](#learnings)
   - [JS Hot Reloading](#js-hot-reloading)
+  - [Global Functions](#global-functions)
 
 ## Quickstart
 
