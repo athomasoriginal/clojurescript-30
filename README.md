@@ -56,8 +56,8 @@ Each repo represents a stand alone project and will contain its own README where
 
 - [01-drumkit](https://github.com/tkjone/clojurescript-30/tree/master/01-drumkit)
 - [02-clock](https://github.com/tkjone/clojurescript-30/tree/master/02-clock)
-- [03-css-variables](https://github.com/tkjone/clojurescript-30/tree/master/03-clock)
-- [04-array-cardio](https://github.com/tkjone/clojurescript-30/tree/master/04-css-variables)
+- [03-css-variables](https://github.com/tkjone/clojurescript-30/tree/master/03-css-variables)
+- [04-array-cardio](https://github.com/tkjone/clojurescript-30/tree/master/04-array-cardio)
 - [05-flex-panels-image-gallery](https://github.com/tkjone/clojurescript-30/tree/master/05-flex-panels-image-gallery)
 - [06-ajax-type-ahead](https://github.com/tkjone/clojurescript-30/tree/master/06-ajax-type-ahead)
 - [07-array-cardio-2](https://github.com/tkjone/clojurescript-30/tree/master/07-array-cardio-2)
