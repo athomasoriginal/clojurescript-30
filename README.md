@@ -65,7 +65,7 @@ Each repo represents a stand alone project and will contain its own README where
 - [08-ajax-type-ahead](https://github.com/tkjone/clojurescript-30/tree/master/08-ajax-type-ahead)
 - [09-array-cardio-2](https://github.com/tkjone/clojurescript-30/tree/master/09-array-cardio-2)
 - [10-html5-canvas](https://github.com/tkjone/clojurescript-30/tree/master/10-html5-canvas)
-- 11-dev-tool-tricks
+- [11-dev-tool-tricks](https://github.com/tkjone/clojurescript-30/tree/master/11-dev-tool-tricks)
 - [12-check-multiple-checkboxes](https://github.com/tkjone/clojurescript-30/tree/master/12-check-multiple-checkboxes)
 - 13-html5-video-player
 - [14-key-sequence-detection](https://github.com/tkjone/clojurescript-30/tree/master/14-key-sequence-detection)
