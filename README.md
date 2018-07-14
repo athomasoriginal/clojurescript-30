@@ -1,17 +1,12 @@
 # ClojureScript 30
 
-This repo contains my answers to Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in ClojureScript. Wes Bos has done an amazing job of designing a course full of small and approachable real-world programs you can build without any setup...if your using JavaScript that is ;)
+This is Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in [ClojureScript](https://clojurescript.org/).
 
-My goal when I set out to do this was just to learn CLJ and functional programming. After working through a few examples, I was actually suprised that some things which I anticipated would be easy, were actually difficult to execute. I remember hitting my head against the wall trying to figure out why the simplest piece of code would not run. In this spirit, my hope is that people find this repo a helpful learning tool. My recommended approach to using this repo:
+The original goal was to become better at functional programming. I would learn Clojure, a functional language, and then apply these skills to JavaScript. The end result is that I documented by process of learning ClojureScript, specifically JS interop, and the knowledge I gained.
 
-- Start with the [Getting Started](getting-started) guide below
-- Run through the first 3 [Modern CLJS](https://github.com/magomimmo/modern-cljs) tutorials
-- Head over to [ClojureScript 30](https://javascript30.com/), try to complete each of the tutorials there. When you get stuck, feel free to come over here for details on how I did it.
-- If you came up with a question that you had as an early learner, that I did not have, or an issue you ran into that I did not, it would be amazing if we could compile them here. This might help us gain insight into how we can better help new developers to join the Clojure community.
+In this spirit, this repo can be used by people learn Clojure. Hopefully this will help in some way. You can use this repo as a reference of examples of vanilla ClojureScript + JS Interop, or take up the JavaScript 30 challenge yourself.
 
-Aside from the above, use this a reference to see how you can write CLJS. Please keep in mind that my code is not the best, but I will work to improve this repo as I keep honing my clojure craft.
-
-I also want to throw the video [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) out there because it really highlights the story elements that make `cljs` a compelling language.
+If you still skeptical on why ClojureScript, there is an excellent video called [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make `cljs` a compelling language.
 
 # Table of Contents
 
@@ -26,7 +21,7 @@ I also want to throw the video [ClojureScript for Skeptics](https://www.youtube.
 
 # Getting Started
 
-Before you can start working on `clj/cljs` you need to setup your development environment. This guide is **OSX** only.
+Before you can start working on `clj/cljs` you need to setup your development environment. The following guide is **OSX** only.
 
 ## Install Java
 
@@ -38,11 +33,13 @@ see [clojure guide - install boot](https://tkjone.github.io/clojure-guide/v1/gui
 
 ## Editor Setup
 
-The most common suggestions for editors I have seen for `clj/cljs` are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html). However, I prefer to keep it simple and use [Atom](https://atom.io/). I believe that this is likely the easiest introduction for new developers as there is strong community support, excellent `clj/cljs` backing and you just don't have to learn to keyboard.
+In short, use [Atom](https://atom.io/). or [VSCode](https://code.visualstudio.com/). These are lightweight editors that have strong Clojure language support.
+
+You are going to hear the more commonly suggested editors are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html). These are excellent editors. I used them when I started learning Clojure. The reason I moved away is because the tooling is complex and the editors are opinionated. If your goal is to learn Clojure, choose an editor that lets yous focus on just the language. For new developers, this is going to be something like Atom 90% of the time.
 
 > To emacs/vim people, this is not a slight against your editors. These are amazing editors and people should learn them. When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great. Remember what it is like to be new at something - its all about baby steps
 
-With this in mind, here are packages that I have added to my Atom setup to help working with Clojure an even more enjoyable experience:
+With this in mind, here are packages that I recommend adding to Atom to help working with Clojure an even more enjoyable experience:
 
 - [language-clojure](https://atom.io/packages/language-clojure)
 - [proto-repl](https://atom.io/packages/proto-repl)
@@ -52,7 +49,7 @@ With this in mind, here are packages that I have added to my Atom setup to help 
 
 # Content Overview
 
-Each repo represents a stand alone project and will contain its own README where you can go to learn more about each one. The first 3 projects are not JavaScript 30 exercises, but [Modern CLJS](https://github.com/magomimmo/modern-cljs). I recommend starting with the first 3 tutorials. The rest is [JavaScript 30](https://javascript30.com/).
+Each repo represents a stand alone project and will contain its own README where you can learn more about it.
 
 - [01-drumkit](https://github.com/tkjone/clojurescript-30/tree/master/01-drumkit)
 - [02-clock](https://github.com/tkjone/clojurescript-30/tree/master/02-clock)
@@ -87,13 +84,15 @@ Each repo represents a stand alone project and will contain its own README where
 
 # Learning Themes
 
-After re-reading and editing all my responses, I found some common themes while learning:
+After re-reading and editing all my responses, here are some tips when learning Clojure:
 
-1.  Learn to Read the Clojure Docs
+1.  Learn to read the Clojure docs
 
-2.  Digging Deep
+    They are opinionated and consistent. Once you learn how they are written, they are an amazing tool.
 
-    Digging too deep to early which makes it difficult because the concepts are difficult to udnerstnad on their own and sometimes it just takes repetition.
+2.  Don't dig too deep too fast
+
+    Clojure feels more complex at times then JavaScript. Digging too deep to early leads to information overload. Take it easy.
 
 # Background
 
