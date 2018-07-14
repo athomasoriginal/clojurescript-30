@@ -77,6 +77,7 @@ Each repo represents a stand alone project and will contain its own README where
 - [20-string-times](https://github.com/tkjone/clojurescript-30/tree/master/20-string-times)
 - [21-unreal-webcam-fun](https://github.com/tkjone/clojurescript-30/tree/master/21-unreal-webcam-fun)
 - [22-native-speech-recognition](https://github.com/tkjone/clojurescript-30/tree/master/22-native-speech-recognition)
+- [23-geolocation](https://github.com/tkjone/clojurescript-30/tree/master/23-geolocation)
 - [24-follow-along-links](https://github.com/tkjone/clojurescript-30/tree/master/24-follow-along-links)
 - [25-speech-synthesis](https://github.com/tkjone/clojurescript-30/tree/master/25-speech-synthesis)
 - [26-sticky-nav](https://github.com/tkjone/clojurescript-30/tree/master/26-sticky-nav)
