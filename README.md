@@ -2,7 +2,7 @@
 
 This is Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in [ClojureScript](https://clojurescript.org/).
 
-The original goal was to become better at functional programming. I would learn Clojure, a functional language, and then apply these skills to JavaScript. The end result is that I documented by process of learning ClojureScript, specifically JS interop, and the knowledge I gained.
+The original goal was to become better at functional programming. I would learn Clojure, a functional language, and then apply these skills to JavaScript. What this repo has become is me documenting the process I used to learn ClojureScript. Each repo contains the exercises written in ClojureScript and write-ups on lessons learned.
 
 In this spirit, this repo can be used by people learn Clojure. Hopefully this will help in some way. You can use this repo as a reference of examples of vanilla ClojureScript + JS Interop, or take up the JavaScript 30 challenge yourself.
 
