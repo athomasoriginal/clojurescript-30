@@ -12,7 +12,6 @@ Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for S
 
 - [Getting Started](#getting-started)
   - [Install Java](#install-java)
-  - [Install Boot](#install-boot)
   - [Editor Setup](#editor-setup)
 - [Content Overview](#content-overview)
 - [Learning Themes](#learning-themes)
