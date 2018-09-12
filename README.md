@@ -2,9 +2,9 @@
 
 This is Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in [ClojureScript](https://clojurescript.org/).
 
-My original goal with learning Clojure was to learn functional programming. The idea was that I would learn Clojure, a functional language, and then apply these skills to JavaScript. This repo represents those efforts. However, there was an unintended side effect: I ended up documenting a process by which I learned Clojure.
+My original goal with learning Clojure was to learn functional programming. The idea was that I would learn Clojure, a functional language, and then apply these skills to JavaScript. This repo represents those efforts.
 
-The result is this repo which contains each of the JS30 exercises written in ClojureScript and write-ups on lessons learned. In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
+This repo contains each of the JS30 exercises written in ClojureScript and write-ups on lessons learned. In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
 
 Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make Clojure a compelling language.
 
