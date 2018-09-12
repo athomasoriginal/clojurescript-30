@@ -25,7 +25,7 @@ Before you can start working on `clj/cljs` you need to [setup your development e
 
 I recommend [Atom](https://atom.io/) or [VSCode](https://code.visualstudio.com/). By default, these are lightweight editors with strong Clojure language support.
 
-Please note that if you ask around, or observe the Clojure community community, [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html) are the top dogs. If you already know how to use one of these, please do so, otherwise, stick to a simple editor. Clojure is going to be a learning journey on its own, there is no need to burden yourself with tools that get in the way of just learning the language.
+Please note that if you ask around, or observe the Clojure community, [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html) are the top dogs. If you already know how to use one of these, please do so, otherwise, stick to a simple editor. Clojure is going to be a learning journey on its own, there is no need to burden yourself with tools that get in the way of just learning the language.
 
 > To emacs/vim people, this is not a slight against your editors. These are amazing editors and people should learn them. When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great. Remember what it is like to be new at something - its all about baby steps
 
