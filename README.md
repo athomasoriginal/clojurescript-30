@@ -2,11 +2,11 @@
 
 This is Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in [ClojureScript](https://clojurescript.org/).
 
-The original goal was to become better at functional programming. I would learn Clojure, a functional language, and then apply these skills to JavaScript. What this repo has become is me documenting the process I used to learn ClojureScript. Each repo contains the exercises written in ClojureScript and write-ups on lessons learned.
+My original goal with learning Clojure was to learn functional programming. The idea was that I would learn Clojure, a functional language, and then apply these skills to JavaScript. This repo represents those efforts. However, there was an unintended side effect: I ended up documenting a process by which I learned Clojure.
 
-In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
+The result is this repo which contains each of the JS30 exercises written in ClojureScript and write-ups on lessons learned. In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
 
-If you skeptical on why ClojureScript, or what it is, there is an excellent video called [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make `cljs` a compelling language.
+Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make Clojure a compelling language.
 
 # Table of Contents
 
@@ -27,25 +27,18 @@ Before you can start working on `clj/cljs` you need to setup your development en
 
 see [clojure guide - install java](https://tkjone.github.io/clojure-guide/v1/guide/#Install-Java)
 
-## Install Boot
-
-see [clojure guide - install boot](https://tkjone.github.io/clojure-guide/v1/guide/#Install-Boot)
-
 ## Editor Setup
 
-In short, use [Atom](https://atom.io/). or [VSCode](https://code.visualstudio.com/). These are lightweight editors that have strong Clojure language support.
+I recommend [Atom](https://atom.io/) or [VSCode](https://code.visualstudio.com/). By default, these are lightweight editors with strong Clojure language support.
 
-You are going to hear the more commonly suggested editors are [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html). These are excellent editors. I used them when I started learning Clojure. The reason I moved away is because the tooling is complex and the editors are opinionated. If your goal is to learn Clojure, choose an editor that lets you focus on just the language. For new developers, this is going to be something like Atom 90% of the time.
+Please note that if you ask around, or observe the Clojure community community, [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html) are the top dogs. If you already know how to use one of these, please do so, otherwise, stick to a simple editor. Clojure is going to be a learning journey on its own, there is no need to burden yourself with tools that get in the way of just learning the language.
 
 > To emacs/vim people, this is not a slight against your editors. These are amazing editors and people should learn them. When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great. Remember what it is like to be new at something - its all about baby steps
 
 With this in mind, here are packages that I recommend adding to Atom to make working with Clojure an even more enjoyable experience:
 
-- [language-clojure](https://atom.io/packages/language-clojure)
-- [proto-repl](https://atom.io/packages/proto-repl)
-- [proto-repl-charts](https://atom.io/packages/proto-repl-charts)
-- [ink](https://atom.io/packages/ink)
-- [parinfer](https://atom.io/packages/parinfer)
+- [language-clojure](https://atom.io/packages/language-clojure) (syntax highlighting)
+- [parinfer](https://atom.io/packages/parinfer) (code formatting)
 
 # Content Overview
 
@@ -102,15 +95,13 @@ If you are new to programming, do not let the above paragraph discourage you. Wh
 
 # Special Thanks
 
-I want to thank [wes bos](https://github.com/wesbos) for providing an amazing course that I believe could be used to help developers learn not just JavaScript, but any language that compiles to JS. For example:
+I want to thank [wes bos](https://github.com/wesbos) for providing amazing, free content. This is a truly awesome resource that I believe could be used to help developers learn not just JavaScript, but any language that compiles to JS. For example:
 
-- Elm
-- ClojureScript
-- Dart
-- ElixirScript
+- [Elm](https://elm-lang.org/)
+- [Reason](https://reasonml.github.io/)
+- [Dart](https://www.dartlang.org/guides/language)
+- [ElixirScript](https://elixirscript.github.io/)
 
 and the above list goes on, but the ones I mentioned are the ones that are more interesting to me and likely more well known.
 
-Big thanks also goes to [Modern CLJS](https://github.com/magomimmo/modern-cljs) and the whole of the [clj/cljs community](http://clojurians.net/) which is by far one of the friendliest, most willing and easily accesibly communities I have experienced. Treat them with respect!
-
-By following along with Wes Bos's course, and the help of some insanely talented clojurians, I can say that I was able to go from an [early to beginner ](https://zedshaw.com/2015/06/16/early-vs-beginning-coders/) CLJS developer.
+Big thanks to the [clj/cljs community](http://clojurians.net/) which is by far one of the friendliest, most willing and easily accessible communities I have experienced!
