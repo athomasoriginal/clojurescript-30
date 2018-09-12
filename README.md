@@ -11,7 +11,6 @@ Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for S
 # Table of Contents
 
 - [Getting Started](#getting-started)
-  - [Install Java](#install-java)
   - [Editor Setup](#editor-setup)
 - [Content Overview](#content-overview)
 - [Learning Themes](#learning-themes)
@@ -20,11 +19,7 @@ Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for S
 
 # Getting Started
 
-Before you can start working on `clj/cljs` you need to setup your development environment. The following guide is **OSX** only.
-
-## Install Java
-
-see [clojure guide - install java](https://tkjone.github.io/clojure-guide/v1/guide/#Install-Java)
+Before you can start working on `clj/cljs` you need to [setup your development environment](https://clojurescript.org/guides/quick-start). The following guide is **OSX** only.
 
 ## Editor Setup
 
