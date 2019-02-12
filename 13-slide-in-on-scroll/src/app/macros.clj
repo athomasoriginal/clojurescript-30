@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns slide-in-on-scroll.macros)
+(ns app.macros)
 
 
 (defmacro p

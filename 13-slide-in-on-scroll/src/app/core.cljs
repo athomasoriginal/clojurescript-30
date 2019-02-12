@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns slide-in-on-scroll.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [slide-in-on-scroll.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; Constants
