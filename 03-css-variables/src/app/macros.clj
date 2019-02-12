@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns css-variables.macros)
+(ns app.macros)
 
 
 (defmacro p

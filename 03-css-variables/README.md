@@ -1,12 +1,12 @@
-# 05-CSS-Variables
+# 03 CSS Variables
 
-* [Housekeeping](#housekeepings)
-* [Quickstart](#quickstart)
-* [Lessons Learned](#lessons-learned)
-  * [doseq](#doseq)
-  * [js interop](#js-interop)
-    * [Double Dot](#double-dot)
-    * [setProperty](#setproperty)
+- [Housekeeping](#housekeepings)
+- [Quickstart](#quickstart)
+- [Lessons Learned](#lessons-learned)
+  - [doseq](#doseq)
+  - [js interop](#js-interop)
+    - [Double Dot](#double-dot)
+    - [setProperty](#setproperty)
 
 ## Housekeeping
 
@@ -19,7 +19,7 @@ Run the following comamnds from the root of the `05-css-variables` repo
 **1. Build and watch the project**
 
 ```bash
-boot dev
+clj -A:dev
 ```
 
 ## Lessons Learned

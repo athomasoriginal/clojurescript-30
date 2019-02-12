@@ -1,5 +1,5 @@
-(ns css-variables.core
-  (:require-macros [css-variables.macros :refer [p pp]]))
+(ns app.core
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 (defn update-style []
