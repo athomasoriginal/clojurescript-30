@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns array-cardio-2.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [array-cardio-2.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 (p "---------------------------- some ---------------------------------")

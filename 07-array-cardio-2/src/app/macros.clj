@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns array-cardio-2.macros)
+(ns app.macros)
 
 
 (defmacro p

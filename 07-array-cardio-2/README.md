@@ -1,11 +1,11 @@
-# 09 Array Cardio 2
+# 07 Array Cardio 2
 
-* [Housekeeping](#housekeepings)
-* [Quickstart](#quickstart)
-* [Lessons Learned](#lessons-learned)
-  * [Clojure](#clojure)
-    * [Variables](#variables)
-  * [Resources][#resources]
+- [Housekeeping](#housekeepings)
+- [Quickstart](#quickstart)
+- [Lessons Learned](#lessons-learned)
+  - [Clojure](#clojure)
+    - [Variables](#variables)
+  - [Resources][#resources]
 
 ## Housekeeping
 
@@ -18,7 +18,7 @@ Run the following comamnds from the root of the `09-array-cardio-2` repo
 **1. Build and watch the project**
 
 ```bash
-boot dev
+clj -A:dev
 ```
 
 ## Lessons Learned
@@ -45,7 +45,7 @@ Take a look at [this](http://www.spacjer.com/blog/2015/11/24/lesser-known-clojur
 
 ### Resources
 
-* [Clojure Plan and Simple Slideshow](https://www.slideshare.net/bmabey/clojure-plainandsimple)
+- [Clojure Plan and Simple Slideshow](https://www.slideshare.net/bmabey/clojure-plainandsimple)
 
   awesome because it gives names to all the different syntax styling. Slide 24 was memorable.
 
