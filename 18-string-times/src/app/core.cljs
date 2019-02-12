@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns string-times.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [string-times.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; globals

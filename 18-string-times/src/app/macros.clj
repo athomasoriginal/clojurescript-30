@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns string-times.macros)
+(ns app.macros)
 
 
 (defmacro p
