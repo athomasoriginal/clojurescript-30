@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns mousemove.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [mousemove.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 ;; globals
 

@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns mousemove.macros)
+(ns app.macros)
 
 
 (defmacro p
