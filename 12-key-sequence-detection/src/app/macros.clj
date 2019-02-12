@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns key-sequence-detection.macros)
+(ns app.macros)
 
 
 (defmacro p

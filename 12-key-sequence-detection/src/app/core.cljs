@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns key-sequence-detection.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [key-sequence-detection.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 ;; App state
 
