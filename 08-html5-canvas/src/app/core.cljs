@@ -1,6 +1,6 @@
-(ns html5-canvas.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [html5-canvas.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; App State

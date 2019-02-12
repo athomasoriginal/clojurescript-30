@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns html5-canvas.macros)
+(ns app.macros)
 
 
 (defmacro p

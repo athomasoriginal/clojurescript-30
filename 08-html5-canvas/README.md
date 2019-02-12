@@ -1,11 +1,11 @@
-# 10 HTML5 Canvas
+# 08 HTML5 Canvas
 
-* [Housekeeping](#housekeepings)
-* [Quickstart](#quickstart)
-* [Lessons Learned](#lessons-learned)
-  * [Functions](#functions)
-  * [Atoms](#atoms)
-  * [State](#state)
+- [Housekeeping](#housekeepings)
+- [Quickstart](#quickstart)
+- [Lessons Learned](#lessons-learned)
+  - [Functions](#functions)
+  - [Atoms](#atoms)
+  - [State](#state)
 
 # Housekeeping
 
@@ -18,7 +18,7 @@ Run the following comamnds from the root of the `10-html-canvas` repo
 **1. Build and watch the project**
 
 ```bash
-boot dev
+clj-A:dev
 ```
 
 # Lessons Learned
