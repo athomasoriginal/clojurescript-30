@@ -1,14 +1,14 @@
-# 06 Array Cardio
+# 04 Array Cardio
 
-* [Housekeeping](#housekeepings)
-* [Quickstart](#quickstart)
-* [Lessons Learned](#lessons-learned)
-  * [Clojure](#clojure)
-    * [Sort](#sort)
-    * [%](#%)
-    * [re-find](#re-find)
-  * [JS Interop](#js-interop)
-    * [Data Structures](#aata-structures)
+- [Housekeeping](#housekeepings)
+- [Quickstart](#quickstart)
+- [Lessons Learned](#lessons-learned)
+  - [Clojure](#clojure)
+    - [Sort](#sort)
+    - [%](#%)
+    - [re-find](#re-find)
+  - [JS Interop](#js-interop)
+    - [Data Structures](#aata-structures)
 
 When going through this lesson it became clear that functional programming in JS in different than functional programming in a functional language like Clojure. Can you do functional programming in JS? Yes. However, the language is often times permissive and clunky. I would argue that as a result, it will take more effort to learn functional programming in JS than it would in Clojure. Some of the reasons for this:
 
@@ -31,7 +31,7 @@ Run the following comamnds from the root of the `06-array-cardio` repo
 **1. Build and watch the project**
 
 ```bash
-boot dev
+clj -A:dev
 ```
 
 ## Lessons Learned
@@ -42,9 +42,9 @@ boot dev
 
 Sort was difficult for me. The issue was that at the time, I did not really know how to read the documentation and thus, even they were not helpful to me in the beginning. In this case, where I was lost was that the first arg is expected to be a function. Another point of confusion was exactly what the docs meant by `coll`. In the end, the following resources are what helped me get through it
 
-* [Bringing Order With Clojure's Sortby](https://www.opensourcery.co.za/2017/01/24/bringing-order-with-clojure-s-sort-by/)
-* [Callability in Clojure](https://camdez.com/blog/2012/03/21/callability-in-clojure/)
-* [Sequences and Collections in Clojure](https://www.brainonfire.net/files/seqs-and-colls/main.html)
+- [Bringing Order With Clojure's Sortby](https://www.opensourcery.co.za/2017/01/24/bringing-order-with-clojure-s-sort-by/)
+- [Callability in Clojure](https://camdez.com/blog/2012/03/21/callability-in-clojure/)
+- [Sequences and Collections in Clojure](https://www.brainonfire.net/files/seqs-and-colls/main.html)
 
 #### %
 
@@ -61,17 +61,17 @@ You are going to see `%` used inside the anonymous function. This threw me for a
 
 `option 1` is going to take in the first arg provided and `option 2` is going to take in the second arg.
 
-* [ ] TODO - Explore this a little more
+- [ ] TODO - Explore this a little more
 
 #### re-find
 
-* [ ] TODO - Explore this more
+- [ ] TODO - Explore this more
 
 ### JS Interop
 
 For my solutions, you will notice I am passing the results through `clj->js`. This is because for all of the data structures, if we want to return them to the front end we need to turn them back in `JS`.
 
-* [ ] TODO - Explain what is happening to the JS Data Structures after they are run through CLJ functions
+- [ ] TODO - Explain what is happening to the JS Data Structures after they are run through CLJ functions
 
 #### Data Structures
 
@@ -116,23 +116,23 @@ You will find that the above is not going to work as you would expect. The reaso
 
 ## Resources
 
-* [Intro to CLJS](https://github.com/swannodette/lt-cljs-tutorial/blob/master/lt-cljs-tutorial.cljs)
+- [Intro to CLJS](https://github.com/swannodette/lt-cljs-tutorial/blob/master/lt-cljs-tutorial.cljs)
 
   Solid overview of the CLJS syntax. When I was starting, this was a good quick reference to get me going.
 
-* [Less and Greater Than Operators](http://blog.jenkster.com/2013/11/clojure-less-than-greater-than-tip.html)
+- [Less and Greater Than Operators](http://blog.jenkster.com/2013/11/clojure-less-than-greater-than-tip.html)
 
   In clojure, the `<` and `>` operators can be confusing because of `prefix` notation. This article helped me think differently about them. Another good resource is [Elements of Clojure](https://leanpub.com/elementsofclojure) which also does an excellent job defining sane defaults and how to use these operators.
 
-* [The Power of Clojure Debugging](https://cambium.consulting/articles/2018/2/8/the-power-of-clojure-debugging)
+- [The Power of Clojure Debugging](https://cambium.consulting/articles/2018/2/8/the-power-of-clojure-debugging)
 
   Excellent article. Not pertinent to succeeding in lesson, but good to know!
 
-* [JS Interop Examples](https://gist.github.com/jasongilman/3671146)
+- [JS Interop Examples](https://gist.github.com/jasongilman/3671146)
 
   This helped give me some ideas about how to transform Data. I remember thinking that I knew what to do is JS, the ideas didn't always clearly translate to what clojure would want me to do.
 
-* [JS Interop Property Access](http://clojurescriptmadeeasy.com/blog/js-interop-property-access.html)
+- [JS Interop Property Access](http://clojurescriptmadeeasy.com/blog/js-interop-property-access.html)
 
   This was updated after I originally used this resource, but provides an awesome example of how to access object properties.
 
@@ -144,22 +144,22 @@ You will find that the above is not going to work as you would expect. The reaso
 
   The fact `aget` works on objects was described to me as an accident and in reality, it is meant to be used on arrays, not objects - for more on this read [CLJS Issue 128](https://github.com/cljs/api/issues/128).
 
-* [Bringing Order With Clojure's Sortby](https://www.opensourcery.co.za/2017/01/24/bringing-order-with-clojure-s-sort-by/)
+- [Bringing Order With Clojure's Sortby](https://www.opensourcery.co.za/2017/01/24/bringing-order-with-clojure-s-sort-by/)
 
   So helpful when trying to understand `sort-by`.
 
-* [Callability in Clojure](https://camdez.com/blog/2012/03/21/callability-in-clojure/)
+- [Callability in Clojure](https://camdez.com/blog/2012/03/21/callability-in-clojure/)
 
   Good exploration of callability of functions.
 
-* [Sequences and Collections in Clojure](https://www.brainonfire.net/files/seqs-and-colls/main.html)
+- [Sequences and Collections in Clojure](https://www.brainonfire.net/files/seqs-and-colls/main.html)
 
   Helps to understand what the docs mean when they reference `coll`
 
-* [Destructuring](http://langintro.com/cljsbook/destructuring.html)
+- [Destructuring](http://langintro.com/cljsbook/destructuring.html)
 
   Good overview of destructuring in CLJ/S
 
-* [Reduce Function](http://langintro.com/cljsbook/reduce_function.html)
+- [Reduce Function](http://langintro.com/cljsbook/reduce_function.html)
 
   Great overview of reduce.
