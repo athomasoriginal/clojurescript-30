@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns sort-without-articles.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [sort-without-articles.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; helpers

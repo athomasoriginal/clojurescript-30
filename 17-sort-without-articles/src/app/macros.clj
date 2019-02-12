@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns sort-without-articles.macros)
+(ns app.macros)
 
 
 (defmacro p
