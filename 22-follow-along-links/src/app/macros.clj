@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns follow-along-links.macros)
+(ns app.macros)
 
 
 ; (defmacro get-attr

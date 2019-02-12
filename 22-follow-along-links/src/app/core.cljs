@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns follow-along-links.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [follow-along-links.macros :refer [p pp get-attr]]))
+  (:require-macros [app.macros :refer [p pp get-attr]]))
 
 ;; Globals
 

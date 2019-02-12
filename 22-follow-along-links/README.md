@@ -10,10 +10,10 @@
 - Build and watch the project
 
   ```bash
-  boot dev
+  clj -A:dev
   ```
 
-Visit site at `http://localhost:3000`
+Visit site at `http://localhost:9000`
 
 ## Learnings
 
