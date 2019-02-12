@@ -1,10 +1,10 @@
-# 07 Flex Panels Image Gallery
+# 05 Flex Panels Image Gallery
 
-* [Housekeeping](#housekeepings)
-* [Quickstart](#quickstart)
-* [Lessons Learned](#lessons-learned)
-  * [Double Dot](#double-dot)
-  * [Parens](#parens)
+- [Housekeeping](#housekeepings)
+- [Quickstart](#quickstart)
+- [Lessons Learned](#lessons-learned)
+  - [Double Dot](#double-dot)
+  - [Parens](#parens)
 
 ## Housekeeping
 
@@ -17,7 +17,7 @@ Run the following comamnds from the root of the `07-flex-panels-image-gallery` r
 **1. Build and watch the project**
 
 ```bash
-boot dev
+clj -A:dev
 ```
 
 ## Lessons Learned

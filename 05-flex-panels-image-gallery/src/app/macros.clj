@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns flex-panels-image-gallery.macros)
+(ns app.macros)
 
 
 (defmacro p

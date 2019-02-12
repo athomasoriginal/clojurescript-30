@@ -1,6 +1,6 @@
 ;; create main project namespace
-(ns flex-panels-image-gallery.core
-  (:require-macros [flex-panels-image-gallery.macros :refer [p pp]]))
+(ns app.core
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; helpers
@@ -14,11 +14,9 @@
         (.. this -classList (toggle "open-active")))))
 
 
-;; start 
+;; start
 
 (let [panels (.. js/document (querySelectorAll ".panel"))]
   (doseq [panel (array-seq panels)]
     (.addEventListener panel "click" toggle-open)
     (.addEventListener panel "transitionend" toggle-active)))
-
-
