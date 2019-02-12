@@ -17,15 +17,9 @@
 clj -A:dev
 ```
 
-# Intro
+## Intro
 
-When I originally worked on these, I immediately used boot + boot-reload and the like. However, these tools do have a steep learning curve. I decided to go back and remove some of the tooling. This was made possible by CLJS 1.10 where we now have a much easier time starting these applications from the terminal. All of this to say, you will notice that this repo has three sub directories which all contain the same code in their `src` files: `boot`, `deps-cli` and `deps-cli-figwheel`. The only difference between each of these is the tooling used. For people from JavaScript, think of it as the difference between `npm scripts` or `gulp`.
-
-When I started this project, your options were `boot` and `leiningen`. There is now a third option called `deps cli`. I originally opted to use `Boot`. I am now using `deps-cli` + `figwheel` everywhere. Why? I feel that for a beginner `boot` and `lein` are difficult to understand and configure. You likely want want to write Clojure and not spend time configuring tooling.
-
-My recommendation is to use `deps-cli-figwheel`. Only use the `boot` and `deps-cli` dirs when you want to see how to configure your app with those tool. Thus, they are meant to illustrate what a project using only the new CLI API could look and function like.
-
-With this in mind, please understand the assumptions here:
+I originally built this example using [3 different tools](https://github.com/tkjone/clojurescript-30/tree/59e6afa3342ba5d596948d331f1c61231be97259) to see how the experience compared. Since then, I have moved away from showing all three in the same repo. If you want to see them, visit the link above. With this ind mind, some of my original assumptions still hold true:
 
 **Assumptions:**
 
@@ -34,10 +28,6 @@ With this in mind, please understand the assumptions here:
 2.  The REPL is more confusing in the beginning then helpful. Consider, you test and rapidly develop with it, but when you write code, its in a file.
 
 3.  Don't introduce too much tooling right away. One of the reasons I liked JS30 is because it approaches education of JS and Web Development without tooling. Just create an HTML file, open it in the browser and your good to go. CLJS is compiled, so its not as simple, but with tools like `deps-cli` it has become a lot easier.
-
-**WARNING:**
-
-`deps-cli` is a little more challenging to use on its own without figwheel during development. The errors are not as visible, the config is a little verbose and, for this particular excercise, it will not serve the `.wav` files correctly.
 
 # Lessons Learned
 
