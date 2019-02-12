@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns ajax-type-ahead.macros)
+(ns app.macros)
 
 
 (defmacro p

@@ -1,14 +1,14 @@
-# 08 Alax Type Ahead
+# 08 Ajax Type Ahead
 
-* [Housekeeping](#housekeepings)
-* [Quickstart](#quickstart)
-* [Lessons Learned](#lessons-learned)
-  * [JS Interop](#js-interop)
-    * [Fetch](#fetch)
-  * [Clojure](#clojure)
-    * [Spread Operator](#spread-operator)
-    * [Regexes](#regexes)
-    * [Concat V Into](#concat-v-into)
+- [Housekeeping](#housekeepings)
+- [Quickstart](#quickstart)
+- [Lessons Learned](#lessons-learned)
+  - [JS Interop](#js-interop)
+    - [Fetch](#fetch)
+  - [Clojure](#clojure)
+    - [Spread Operator](#spread-operator)
+    - [Regexes](#regexes)
+    - [Concat V Into](#concat-v-into)
 
 ## Housekeeping
 
@@ -21,7 +21,7 @@ Run the following comamnds from the root of the `08-ajax-type-ahead` repo
 **1. Build and watch the project**
 
 ```bash
-boot dev
+clj -A:dev
 ```
 
 ## Lessons Learned

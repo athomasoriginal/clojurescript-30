@@ -1,6 +1,6 @@
 ;; create main project namespace
-(ns ajax-type-ahead.core
-  (:require-macros [ajax-type-ahead.macros :refer [p pp]]))
+(ns app.core
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; Globals
@@ -14,14 +14,14 @@
 
 ;; Helpers
 
-(defn find-matches 
+(defn find-matches
  [word-to-match, cities]
  (filter #(re-seq (re-pattern (str "(?i)" word-to-match)) (.. % -city)) (.. cities -state)))
 
 
 ;; Event Handlers
 
-(defn display-matches! 
+(defn display-matches!
  [e]
  (this-as this
    (let [matchArray (find-matches (.. this -value) cities)
