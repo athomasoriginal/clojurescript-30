@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns multiple-checkboxes.macros)
+(ns app.macros)
 
 
 (defmacro p

@@ -1,5 +1,5 @@
-(ns multiple-checkboxes.core
-  (:require-macros [multiple-checkboxes.macros :refer [p pp]]))
+(ns app.core
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 (def app-state (atom { :last-checked nil}))
