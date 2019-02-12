@@ -1,15 +1,21 @@
-# 03-Drumkit
+# Drumkit
 
 ---
 
 - [Intro](#intro)
-- [Housekeeping](#housekeepings)
+- [Quick Start](#quick-start)
 - [Lessons Learned](#lessons-learned)
   - [Protocols](#Protocols)
   - [defs](#defs)
   - [Formatting Strings](#formatting-strings)
 - [Final Thoughts](#final-thoughts)
 - [Resources](#resources)
+
+## Quick Start
+
+```bash
+clj -A:dev
+```
 
 # Intro
 
