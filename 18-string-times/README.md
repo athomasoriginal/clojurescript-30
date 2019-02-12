@@ -2,13 +2,14 @@
 
 I liked this lesson because it provided an opportunity to explore how strings and numbers respond to math in Clojure.
 
+- [Quick Start](#quick-start)
 - [Multiplication and Strings](#multiplication-and-strings)
 
 # Requirements
 
 Please ensure you have a clojure environment running locally - see [Getting Started Guide](https://github.com/tkjone/clojurescript-30#getting-started) if you need to set one up.
 
-# Quickstart
+# Quick Start
 
 Run the following comamnds from the root of `20-string-times`
 

@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns unreal-webcam-fun.core
+(ns app.core
   (:require        [cljs.core.async :as async])
-  (:require-macros [unreal-webcam-fun.macros :refer [p pp]]
+  (:require-macros [app.macros :refer [p pp]]
                    [cljs.core.async.macros :as m :refer [go]]))
 
 

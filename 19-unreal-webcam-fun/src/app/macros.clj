@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns unreal-webcam-fun.macros)
+(ns app.macros)
 
 
 (defmacro p
