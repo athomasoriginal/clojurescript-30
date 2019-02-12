@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns localstorage.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [localstorage.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; Actions

@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns localstorage.macros)
+(ns app.macros)
 
 
 (defmacro p

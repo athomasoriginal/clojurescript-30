@@ -1,0 +1,8 @@
+{:paths   ["src" "resources"]
+ :deps    {org.clojure/clojurescript {:mvn/version "1.10.516"}}
+
+ :aliases {:dev {:main-opts ["-m"  "cljs.main"
+                             "-ro" "ro.edn"
+                             "-w"  "src"
+                             "-c"  "app.core"
+                             "-r"]}}}
