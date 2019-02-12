@@ -1,7 +1,7 @@
 ;; create main project namespace
-(ns html5-video-player.core
+(ns app.core
   (:require        [goog.string :as gstr] goog.string.format)
-  (:require-macros [html5-video-player.macros :refer [p pp]]))
+  (:require-macros [app.macros :refer [p pp]]))
 
 ;; constants
 

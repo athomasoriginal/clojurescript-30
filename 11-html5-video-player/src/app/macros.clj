@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns html5-video-player.macros)
+(ns app.macros)
 
 
 (defmacro p
