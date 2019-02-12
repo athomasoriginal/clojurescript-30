@@ -1,6 +1,6 @@
 ;; create main project namespace
-(ns speech-recognition.core
-  (:require-macros [speech-recognition.macros :refer [p pp]]))
+(ns app.core
+  (:require-macros [app.macros :refer [p pp]]))
 
 
 ;; Globals

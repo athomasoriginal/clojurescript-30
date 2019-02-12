@@ -1,5 +1,5 @@
 ;; create macros namespace
-(ns speech-recognition.macros)
+(ns app.macros)
 
 
 (defmacro p

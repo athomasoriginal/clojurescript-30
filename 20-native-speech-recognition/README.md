@@ -12,7 +12,7 @@ Customize the HTML5 Video Player with CLJS.
 - Build and watch the project
 
   ```bash
-  boot dev
+  clj -A:dev
   ```
 
 Visit site at `http://localhost:3000`
