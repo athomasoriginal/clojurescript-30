@@ -17,8 +17,16 @@ Run the following comamnds from the root of the `17-localstorage-and-event-deleg
 **1. Run the projcet**
 
 ```bash
-clj -A:dev
+clj -M:dev
 ```
+
+> `-M` assumes your using a Clojure Tools version greater than `1.10.1.708`.  Not sure what version your on?  Run `clj -h` and you should see output near the top of the output like:
+
+```bash
+➜ clj -h
+Version: 1.10.1.708 # this is the version your on
+```
+
 
 **2. Visit the app**
 

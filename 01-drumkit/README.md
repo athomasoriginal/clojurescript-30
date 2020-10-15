@@ -17,7 +17,12 @@
 clj -M:dev
 ```
 
-> `-M` assumes your using a Clojure Tools version greater than `1.10.1.708`.  See [CHANGELOG]
+> `-M` assumes your using a Clojure Tools version greater than `1.10.1.708`.  Not sure what version your on?  Run `clj -h` and you should see output near the top of the output like: See [CHANGELOG]
+
+```bash
+➜ clj -h
+Version: 1.10.1.708 # this is the version your on
+```
 
 ## Intro
 
