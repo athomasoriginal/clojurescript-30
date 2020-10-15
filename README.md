@@ -12,6 +12,7 @@ Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for S
 
 - [Getting Started](#getting-started)
   - [Editor Setup](#editor-setup)
+  - [Running Projects]
 - [Content Overview](#content-overview)
 - [Learning Themes](#learning-themes)
 - [Background](#background)
@@ -19,20 +20,22 @@ Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for S
 
 # Getting Started
 
-Before you can start working on `clj/cljs` you need to [setup your development environment](https://clojurescript.org/guides/quick-start). The following guide is **OSX** only.
+To start working with this project, or even just starting with your own CLJS projects, you need to setup your local machine for ClojureScript development.  Here are the things you need locally and links to where you can find guides:
+
+- [Install Java]
+- [Install Clojure CLI Tools]
+
+The above are geared towards **OSX** users.  For non-osx, please see [setup your development environment](https://clojurescript.org/guides/quick-start).
+
+## Running Projects
+
+Each project has it's own README with guides for how to run them.  For the most part, they all start the same, but if you run across a poject and the run instructions are different it's because I was demoing other ways to run a vanilla CLJS project.
 
 ## Editor Setup
 
-I recommend [Atom](https://atom.io/) or [VSCode](https://code.visualstudio.com/). By default, these are lightweight editors with strong Clojure language support.
+I recommend [Atom] or [VSCode]. By default, these are lightweight editors with strong Clojure language support.  For a full write up on the text-editors of Clojure see [Clojure Text Editors].
 
-Please note that if you ask around, or observe the Clojure community, [Emacs](https://www.gnu.org/software/emacs/), [vim](http://www.vim.org/) and [Intelij Cursive](https://cursive-ide.com/userguide/paredit.html) are the top dogs. If you already know how to use one of these, please do so, otherwise, stick to a simple editor. Clojure is going to be a learning journey on its own, there is no need to burden yourself with tools that get in the way of just learning the language.
-
-> To emacs/vim people, this is not a slight against your editors. These are amazing editors and people should learn them. When I was learning clojure, I took the time to work with them and the burden on my original goal of learning clj/cljs was too great. Remember what it is like to be new at something - its all about baby steps
-
-With this in mind, here are packages that I recommend adding to Atom to make working with Clojure an even more enjoyable experience:
-
-- [language-clojure](https://atom.io/packages/language-clojure) (syntax highlighting)
-- [parinfer](https://atom.io/packages/parinfer) (code formatting)
+If you're interested in exploring Atom, there is a whole video series for [Setting up Atom for Clojure Development]
 
 # Content Overview
 
@@ -99,3 +102,12 @@ I want to thank [wes bos](https://github.com/wesbos) for providing amazing, free
 and the above list goes on, but the ones I mentioned are the ones that are more interesting to me and likely more well known.
 
 Big thanks to the [clj/cljs community](http://clojurians.net/) which is by far one of the friendliest, most willing and easily accessible communities I have experienced!
+
+[Running Projects]: #running-projects
+
+[Atom]: https://atom.io/
+[VSCode]: https://code.visualstudio.com/
+[Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc&list=PLaGDS2KB3-ArG0WqAytE9GsZgrM-USsZA&index=2
+[Install Clojure CLI Tools]: https://www.youtube.com/watch?v=5_q5pLoz9b0&list=PLaGDS2KB3-ArG0WqAytE9GsZgrM-USsZA&index=5
+[Clojure Text Editors]: https://betweentwoparens.com/clojure-text-editors
+[Setting up Atom for Clojure Development]: https://www.youtube.com/watch?v=XJ4DUFjqDuQ&list=PLaGDS2KB3-AqeOryQptgApJ6M7mfoFXIp
