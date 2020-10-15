@@ -14,12 +14,14 @@
 ## Quick Start
 
 ```bash
-clj -A:dev
+clj -M:dev
 ```
+
+> `-M` assumes your using a Clojure Tools version greater than `1.10.1.708`.  See [CHANGELOG]
 
 ## Intro
 
-I originally built this example using [3 different tools](https://github.com/tkjone/clojurescript-30/tree/59e6afa3342ba5d596948d331f1c61231be97259) to see how the experience compared. Since then, I have moved away from showing all three in the same repo. If you want to see them, visit the link above. With this ind mind, some of my original assumptions still hold true:
+I originally built this example using [3 different tools](https://github.com/tkjone/clojurescript-30/tree/59e6afa3342ba5d596948d331f1c61231be97259) to see how the experience compared. Since then, I have moved away from showing all three in the same repo. If you want to see them, visit the link above. With this in mind, some of my original assumptions still hold true:
 
 **Assumptions:**
 
@@ -91,3 +93,5 @@ The above is what I wrote when I finished this exercise. No idea what I was refe
 
 - https://www.andrewhfarmer.com/webpack-hmr-tutorial/
 - https://github.com/bhauman/lein-figwheel
+
+[CHANGELOG]: https://github.com/clojure/brew-install/blob/1.10.1/CHANGELOG.md
