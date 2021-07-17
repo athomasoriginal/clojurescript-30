@@ -2,9 +2,9 @@
 
 This is Wes Bos's [JavaScript 30] challenge written in [ClojureScript].
 
-I started learning Clojure to improve my functional programming skills and expose myself to a different way of thinking. The idea was that I would learn Clojure, a functional language, and then apply these skills to JavaScript.
+I started learning Clojure to improve my functional programming skills and strength/diversify my programming mental model. The idea was that I would learn Clojure, a functional language, and then apply these skills to JavaScript.
 
-This repo contains each of the JS30 exercises written in ClojureScript and write-ups on lessons learned. In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
+This repo contains each of the JavaScript 30 exercises written in ClojureScript with write-ups on the lessons I learned while writing them. In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
 
 Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for Skeptics] which really highlights the story elements that make Clojure a compelling language.
 
@@ -25,11 +25,11 @@ To start working with this project, or even just starting with your own CLJS pro
 - [Install Java]
 - [Install Clojure CLI Tools]
 
-The above are geared towards **OSX** users.  For non-osx, please see [setup your development environment].
+The above are for **OSX** users.  For non-osx, please see [setup your development environment].
 
 ## Running Projects
 
-Each project has it's own README with guides for how to run them.  For the most part, they all start the same, but if you run across a poject and the run instructions are different it's because I was demoing other ways to run a vanilla CLJS project.
+Each project has it's own README with guides for how to run them.  For the most part, they are all run in the same way, but if you run across a poject and the run instructions are different it's because I am demoing other ways to run a vanilla CLJS project.
 
 ## Editor Setup
 
