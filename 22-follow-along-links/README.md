@@ -11,11 +11,11 @@
 clj -M:dev
 ```
 
-> `-M` assumes your using a Clojure Tools version greater than `1.10.1.708`.  Not sure what version your on?  Run `clj -h` and you should see output near the top of the output like:
+> `-M` assumes your using a Clojure Tools version greater than `1.10.3.855`.  Not sure what version your on?  Run `clj -h` and you should see output near the top of the output like:
 
 ```bash
 ➜ clj -h
-Version: 1.10.1.708 # this is the version your on
+Version: 1.10.3.855 # this is the version your on
 ```
 
 
