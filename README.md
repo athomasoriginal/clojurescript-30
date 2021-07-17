@@ -1,22 +1,22 @@
 # ClojureScript 30
 
-This is Wes Bos's [JavaScript 30](https://javascript30.com/) challenge written in [ClojureScript](https://clojurescript.org/).
+This is Wes Bos's [JavaScript 30] challenge written in [ClojureScript].
 
 I started learning Clojure to improve my functional programming skills and expose myself to a different way of thinking. The idea was that I would learn Clojure, a functional language, and then apply these skills to JavaScript.
 
 This repo contains each of the JS30 exercises written in ClojureScript and write-ups on lessons learned. In this spirit, I hope others find this repo and can use it on their own journey towards learning Clojure.
 
-Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for Skeptics](https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded) which really highlights the story elements that make Clojure a compelling language.
+Never heard of Clojure? Skeptical? I encourage you to watch [ClojureScript for Skeptics] which really highlights the story elements that make Clojure a compelling language.
 
 # Table of Contents
 
-- [Getting Started](#getting-started)
-  - [Editor Setup](#editor-setup)
+- [Getting Started]
+  - [Editor Setup]
   - [Running Projects]
-- [Content Overview](#content-overview)
-- [Learning Themes](#learning-themes)
-- [Background](#background)
-- [Special Thanks](#special-thanks)
+- [Content Overview]
+- [Learning Themes]
+- [Background]
+- [Special Thanks]
 
 # Getting Started
 
@@ -25,7 +25,7 @@ To start working with this project, or even just starting with your own CLJS pro
 - [Install Java]
 - [Install Clojure CLI Tools]
 
-The above are geared towards **OSX** users.  For non-osx, please see [setup your development environment](https://clojurescript.org/guides/quick-start).
+The above are geared towards **OSX** users.  For non-osx, please see [setup your development environment].
 
 ## Running Projects
 
@@ -92,21 +92,37 @@ If you are new to programming, do not let the above paragraph discourage you. Wh
 
 # Special Thanks
 
-I want to thank [wes bos](https://github.com/wesbos) for providing amazing, free content. This is a truly awesome resource that I believe could be used to help developers learn not just JavaScript, but any language that compiles to JS. For example:
+I want to thank [wes bos] for providing amazing, free content. This is a truly awesome resource that I believe could be used to help developers learn not just JavaScript, but any language that compiles to JS. For example:
 
-- [Elm](https://elm-lang.org/)
-- [Reason](https://reasonml.github.io/)
-- [Dart](https://www.dartlang.org/guides/language)
-- [ElixirScript](https://elixirscript.github.io/)
+- [Elm]
+- [Reason]
+- [Dart]
+- [ElixirScript]
 
 and the above list goes on, but the ones I mentioned are the ones that are more interesting to me and likely more well known.
 
-Big thanks to the [clj/cljs community](http://clojurians.net/) which is by far one of the friendliest, most willing and easily accessible communities I have experienced!
+Big thanks to the [clj/cljs community] which is by far one of the friendliest, most willing and easily accessible communities I have experienced!
 
+[Getting Started]: #getting-started
+[Editor Setup]: #editor-setup
 [Running Projects]: #running-projects
+[Content Overview]: #content-overview
+[Learning Themes]: #learning-themes
+[Background]: #background
+[Special Thanks]: #special-thanks
 
 [Atom]: https://atom.io/
+[JavaScript 30]: https://javascript30.com/
+[wes bos]: https://github.com/wesbos
 [VSCode]: https://code.visualstudio.com/
+[Elm]: https://elm-lang.org/
+[Reason]: https://reasonml.github.io/
+[Dart]: https://www.dartlang.org/guides/language
+[ElixirScript]: https://elixirscript.github.io/
+[clj/cljs community]: http://clojurians.net/
+[ClojureScript]: https://clojurescript.org/
+[ClojureScript for Skeptics]: https://www.youtube.com/watch?v=gsffg5xxFQI&feature=player_embedded
+[setup your development environment]: https://clojurescript.org/guides/quick-start
 [Install Java]: https://www.youtube.com/watch?v=SljDPNwAFOc&list=PLaGDS2KB3-ArG0WqAytE9GsZgrM-USsZA&index=2
 [Install Clojure CLI Tools]: https://www.youtube.com/watch?v=5_q5pLoz9b0&list=PLaGDS2KB3-ArG0WqAytE9GsZgrM-USsZA&index=5
 [Clojure Text Editors]: https://betweentwoparens.com/clojure-text-editors
